@@ -8,7 +8,7 @@ This is a public repo for public data about the General Synod.
 
 - [november-2026-papers.md](november-2026-papers.md): index of the papers for the November 2026 group of sessions.
 - [synod-members-resources.md](synod-members-resources.md): index of the members' resources pages.
-- [members.md](members.md): every member of the 2026-2031 Synod in the order of the Church of England's list, with a link to each elected member's election statement where one has been published, and a note where none exists.
+- [members.md](members.md): every member of the 2026-2031 Synod in the order of the Church of England's list, with a link to each elected member's election statement where one has been published, a link to their Wikipedia article where one exists, and a note where no statement exists.
 - [download_statements.py](download_statements.py): fetches every linked statement into `statements/`. Needs Python 3 and `requests`.
 - [data/members.csv](data/members.csv): the 487 members by GS number, constituency, house and name, parsed from the Church of England's October 2026 list.
 - [data/dioceses.csv](data/dioceses.csv): the 42 dioceses and their websites.
@@ -19,6 +19,7 @@ This is a public repo for public data about the General Synod.
 - [data/compiled.csv](data/compiled.csv): documents that hold several members' statements in one file (Chester publishes one per house; the Church of England publishes one per special constituency and province); `kind=answers` marks a collection of candidates' answers to electors' questions, used where no addresses are online (St Albans).
 - [data/aliases.csv](data/aliases.csv): spellings of surnames used on diocesan pages that differ from the national list.
 - [data/notes.csv](data/notes.csv): why a member has no statement, by GS number.
+- [data/wikipedia.csv](data/wikipedia.csv): the English Wikipedia article about each member where one exists, found by `agent/find_wikipedia.py` (search by name, then the article's opening checked against the member's title and role; a few matches accepted or rejected by hand after reading the member's statement).
 - [data/statements.csv](data/statements.csv): one row per elected member, with the URL, local path and SHA-256 of the statement found for them, if any.
 - [data/coverage.md](data/coverage.md): statements found per diocese.
 - `statements/` (not in the repo, see below): the downloaded election statements, one folder per diocese or constituency, files named `<GS number>-<surname>-<first name>`.

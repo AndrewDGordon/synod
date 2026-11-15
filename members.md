@@ -1,79 +1,81 @@
-# Members of the General Synod 2026-2031 and their election statements
+# Members of the General Synod 2026-2031: election statements and Wikipedia articles
 
 The names, GS numbers, constituencies and houses follow the Church of England's [list of members](https://www.churchofengland.org/sites/default/files/2026-10/List-of-members-for-website-v2.pdf) (October 2026), in its order. The statement links point to the candidates' election addresses where a diocese or the Church of England has published one. The documents themselves are not reproduced here; the links lead to the publishers' own copies. Run `python3 download_statements.py` to fetch them all.
 
 Of the 410 elected members, 395 have a statement linked below. The members without one (uncontested seats, or seats held ex officio) carry a note saying why. Members who sit by office, appointment or co-option were not elected and have no statements.
 
-Generated 2026-11-15 by `agent/make_members_page.py` from `data/members.csv` and `data/statements.csv`.
+A member's name is a link to their English Wikipedia article where one exists (81 members), found by `agent/find_wikipedia.py` and checked against the member's role.
+
+Generated 2026-11-15 by `agent/make_members_page.py` from `data/members.csv`, `data/statements.csv` and `data/wikipedia.csv`.
 
 
 ## House of Bishops
 
 | GS | Name | Constituency | House | Statement | Note |
 |---:|---|---|---|---|---|
-| 1 | The Most Revd Dame Sarah Mullally | Canterbury | Bishops |  |  |
-| 2 | The Most Revd Stephen Cottrell | York | Bishops |  |  |
-| 3 | The Rt Revd Dr Emma Ineson | London | Non-voting |  |  |
-| 4 | The Rt Revd Rick Simpson | Durham | Bishops |  |  |
-| 5 | The Rt Revd Philip Mounstephen | Winchester | Bishops |  |  |
-| 6 | The Rt Revd Michael Beasley | Bath and Wells | Bishops |  |  |
-| 7 | The Rt Revd Michael Volland | Birmingham | Bishops |  |  |
-| 8 | The Rt Revd Philip North | Blackburn | Bishops |  |  |
-| 9 | The Rt Revd Neil Warwick | Bristol | Non-voting |  |  |
-| 10 | The Rt Revd Rob Saner-Haigh | Carlisle | Bishops |  |  |
-| 11 | The Rt Revd Dr Guli Francis-Dehqani | Chelmsford | Bishops |  |  |
-| 12 | The Rt Revd Mark Tanner | Chester | Bishops |  |  |
-| 13 | The Rt Revd Will Hazlewood | Chichester | Non-voting |  |  |
-| 14 | The Rt Revd Sophie Jelley | Coventry | Bishops |  |  |
-| 15 | The Rt Revd Jackie Searle | Derby | Non-voting |  |  |
-| 16 | The Rt Revd Sarah Clark | Ely | Bishops |  |  |
-| 17 | The Rt Revd Dr Robert Innes | Europe | Bishops |  |  |
-| 18 | The Rt Revd Mike Harrison | Exeter | Bishops |  |  |
-| 19 | The Rt Revd Rachel Treweek | Gloucester | Bishops |  |  |
-| 20 | The Rt Revd Paul Davies | Guildford | Non-voting |  |  |
-| 21 | The Rt Revd Richard Jackson | Hereford | Bishops |  |  |
-| 22 | The Rt Revd Toby Howarth | Leeds | Non-voting |  |  |
-| 23 | The Rt Revd Martyn Snow | Leicester | Bishops |  |  |
-| 24 | The Rt Revd Sarah Bullock | Lichfield | Non-voting |  |  |
-| 25 | The Rt Revd Nick Chamberlain | Lincoln | Non-voting |  |  |
-| 26 | The Rt Revd Dr Ruth Worsley | Liverpool | Non-voting |  |  |
-| 27 | The Rt Revd David Walker | Manchester | Bishops |  |  |
-| 28 | The Rt Revd Helen-Ann Hartley | Newcastle | Bishops |  |  |
-| 29 | The Rt Revd Graham Usher | Norwich | Bishops |  |  |
-| 30 | The Rt Revd Gavin Collins | Oxford | Non-voting |  |  |
-| 31 | The Rt Revd Debbie Sellin | Peterborough | Bishops |  |  |
-| 32 | The Rt Revd Geoffrey Annas | Portsmouth | Non-voting |  |  |
-| 33 | The Rt Revd Dr Jonathan Gibbs | Rochester | Bishops |  |  |
-| 34 | The Rt Revd Dr Andrew Rumsey | St Albans | Bishops |  |  |
-| 35 | The Rt Revd Joanne Grenfell | St Eds & Ipswich | Bishops |  |  |
-| 36 | The Rt Revd Karen Gorham | Salisbury | Non-voting |  |  |
-| 37 | The Rt Revd Dr Pete Wilcox | Sheffield | Bishops |  |  |
-| 38 | The Rt Revd Tricia Hillas | Sodor and Man | Bishops |  |  |
-| 39 | The Rt Revd Dr Rosemarie Mallett | Southwark | Non-voting |  |  |
+| 1 | [The Most Revd Dame Sarah Mullally](https://en.wikipedia.org/wiki/Sarah_Mullally) | Canterbury | Bishops |  |  |
+| 2 | [The Most Revd Stephen Cottrell](https://en.wikipedia.org/wiki/Stephen_Cottrell) | York | Bishops |  |  |
+| 3 | [The Rt Revd Dr Emma Ineson](https://en.wikipedia.org/wiki/Emma_Ineson) | London | Non-voting |  |  |
+| 4 | [The Rt Revd Rick Simpson](https://en.wikipedia.org/wiki/Rick_Simpson_(bishop)) | Durham | Bishops |  |  |
+| 5 | [The Rt Revd Philip Mounstephen](https://en.wikipedia.org/wiki/Philip_Mounstephen) | Winchester | Bishops |  |  |
+| 6 | [The Rt Revd Michael Beasley](https://en.wikipedia.org/wiki/Michael_Beasley_(bishop)) | Bath and Wells | Bishops |  |  |
+| 7 | [The Rt Revd Michael Volland](https://en.wikipedia.org/wiki/Michael_Volland) | Birmingham | Bishops |  |  |
+| 8 | [The Rt Revd Philip North](https://en.wikipedia.org/wiki/Philip_North) | Blackburn | Bishops |  |  |
+| 9 | [The Rt Revd Neil Warwick](https://en.wikipedia.org/wiki/Neil_Warwick) | Bristol | Non-voting |  |  |
+| 10 | [The Rt Revd Rob Saner-Haigh](https://en.wikipedia.org/wiki/Rob_Saner-Haigh) | Carlisle | Bishops |  |  |
+| 11 | [The Rt Revd Dr Guli Francis-Dehqani](https://en.wikipedia.org/wiki/Guli_Francis-Dehqani) | Chelmsford | Bishops |  |  |
+| 12 | [The Rt Revd Mark Tanner](https://en.wikipedia.org/wiki/Mark_Tanner) | Chester | Bishops |  |  |
+| 13 | [The Rt Revd Will Hazlewood](https://en.wikipedia.org/wiki/Will_Hazlewood) | Chichester | Non-voting |  |  |
+| 14 | [The Rt Revd Sophie Jelley](https://en.wikipedia.org/wiki/Sophie_Jelley) | Coventry | Bishops |  |  |
+| 15 | [The Rt Revd Jackie Searle](https://en.wikipedia.org/wiki/Jackie_Searle) | Derby | Non-voting |  |  |
+| 16 | [The Rt Revd Sarah Clark](https://en.wikipedia.org/wiki/Sarah_Clark_(bishop)) | Ely | Bishops |  |  |
+| 17 | [The Rt Revd Dr Robert Innes](https://en.wikipedia.org/wiki/Robert_Innes_(bishop)) | Europe | Bishops |  |  |
+| 18 | [The Rt Revd Mike Harrison](https://en.wikipedia.org/wiki/Mike_Harrison_(bishop)) | Exeter | Bishops |  |  |
+| 19 | [The Rt Revd Rachel Treweek](https://en.wikipedia.org/wiki/Rachel_Treweek) | Gloucester | Bishops |  |  |
+| 20 | [The Rt Revd Paul Davies](https://en.wikipedia.org/wiki/Paul_Davies_(bishop)) | Guildford | Non-voting |  |  |
+| 21 | [The Rt Revd Richard Jackson](https://en.wikipedia.org/wiki/Richard_Jackson_(bishop)) | Hereford | Bishops |  |  |
+| 22 | [The Rt Revd Toby Howarth](https://en.wikipedia.org/wiki/Toby_Howarth) | Leeds | Non-voting |  |  |
+| 23 | [The Rt Revd Martyn Snow](https://en.wikipedia.org/wiki/Martyn_Snow) | Leicester | Bishops |  |  |
+| 24 | [The Rt Revd Sarah Bullock](https://en.wikipedia.org/wiki/Sarah_Bullock) | Lichfield | Non-voting |  |  |
+| 25 | [The Rt Revd Nick Chamberlain](https://en.wikipedia.org/wiki/Nicholas_Chamberlain) | Lincoln | Non-voting |  |  |
+| 26 | [The Rt Revd Dr Ruth Worsley](https://en.wikipedia.org/wiki/Ruth_Worsley) | Liverpool | Non-voting |  |  |
+| 27 | [The Rt Revd David Walker](https://en.wikipedia.org/wiki/David_Walker_(bishop_of_Manchester)) | Manchester | Bishops |  |  |
+| 28 | [The Rt Revd Helen-Ann Hartley](https://en.wikipedia.org/wiki/Helen-Ann_Hartley) | Newcastle | Bishops |  |  |
+| 29 | [The Rt Revd Graham Usher](https://en.wikipedia.org/wiki/Graham_Usher_(bishop)) | Norwich | Bishops |  |  |
+| 30 | [The Rt Revd Gavin Collins](https://en.wikipedia.org/wiki/Gavin_Collins) | Oxford | Non-voting |  |  |
+| 31 | [The Rt Revd Debbie Sellin](https://en.wikipedia.org/wiki/Debbie_Sellin) | Peterborough | Bishops |  |  |
+| 32 | [The Rt Revd Geoffrey Annas](https://en.wikipedia.org/wiki/Geoff_Annas) | Portsmouth | Non-voting |  |  |
+| 33 | [The Rt Revd Dr Jonathan Gibbs](https://en.wikipedia.org/wiki/Jonathan_Gibbs_(bishop)) | Rochester | Bishops |  |  |
+| 34 | [The Rt Revd Dr Andrew Rumsey](https://en.wikipedia.org/wiki/Andrew_Rumsey) | St Albans | Bishops |  |  |
+| 35 | [The Rt Revd Joanne Grenfell](https://en.wikipedia.org/wiki/Joanne_Grenfell) | St Eds & Ipswich | Bishops |  |  |
+| 36 | [The Rt Revd Karen Gorham](https://en.wikipedia.org/wiki/Karen_Gorham) | Salisbury | Non-voting |  |  |
+| 37 | [The Rt Revd Dr Pete Wilcox](https://en.wikipedia.org/wiki/Pete_Wilcox) | Sheffield | Bishops |  |  |
+| 38 | [The Rt Revd Tricia Hillas](https://en.wikipedia.org/wiki/Tricia_Hillas) | Sodor and Man | Bishops |  |  |
+| 39 | [The Rt Revd Dr Rosemarie Mallett](https://en.wikipedia.org/wiki/Rosemarie_Mallett) | Southwark | Non-voting |  |  |
 | 40 | The Rt Revd Paul Williams | Southwell & Nottingham | Bishops |  |  |
-| 41 | The Rt Revd David Williams | Truro | Bishops |  |  |
-| 42 | The Rt Revd Hugh Nelson | Worcester | Bishops |  |  |
-| 43 | The Rt Revd Rose Hudson-Wilkin | Suffragan Bishop | Bishops |  | Bishop of Dover: sits in the House of Bishops ex officio, not one of the nine elected suffragans; no address |
+| 41 | [The Rt Revd David Williams](https://en.wikipedia.org/wiki/David_Williams_(bishop_of_Truro)) | Truro | Bishops |  |  |
+| 42 | [The Rt Revd Hugh Nelson](https://en.wikipedia.org/wiki/Hugh_Nelson_(bishop)) | Worcester | Bishops |  |  |
+| 43 | [The Rt Revd Rose Hudson-Wilkin](https://en.wikipedia.org/wiki/Rose_Hudson-Wilkin) | Suffragan Bishop | Bishops |  | Bishop of Dover: sits in the House of Bishops ex officio, not one of the nine elected suffragans; no address |
 | 44 |  | Armed Forces | Bishops |  |  |
-| 45 | The Rt Revd Gavin Collins | Suffragan Bishop | Bishops | [pages 1-1 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-southern-suffragans-election-addresses.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
-| 46 | The Rt Revd Paul Davies | Suffragan Bishop | Bishops | [pages 3-3 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-southern-suffragans-election-addresses.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
-| 47 | The Rt Revd Rod Green | Suffragan Bishop | Bishops | [pages 5-6 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-southern-suffragans-election-addresses.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
-| 48 | The Rt Revd Robert Springett | Suffragan Bishop | Bishops | [pages 7-7 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-southern-suffragans-election-addresses.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
-| 49 | The Rt Revd Paul Thomas | Suffragan Bishop | Bishops | [pages 8-8 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-southern-suffragans-election-addresses.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
-| 50 | The Rt Revd Arun Arora | Suffragan Bishop | Bishops | [pages 1-1 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-northern-suffragans-election-addresses.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
-| 51 | The Rt Revd Jill Duff | Suffragan Bishop | Bishops | [pages 2-2 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-northern-suffragans-election-addresses.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
-| 52 | The Rt Revd Simon Robinson | Suffragan Bishop | Bishops | [pages 3-3 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-northern-suffragans-election-addresses.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
-| 53 | The Rt Revd Dr Eleanor Sanderson | Suffragan Bishop | Bishops | [pages 5-5 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-northern-suffragans-election-addresses.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
+| 45 | [The Rt Revd Gavin Collins](https://en.wikipedia.org/wiki/Gavin_Collins) | Suffragan Bishop | Bishops | [pages 1-1 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-southern-suffragans-election-addresses.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
+| 46 | [The Rt Revd Paul Davies](https://en.wikipedia.org/wiki/Paul_Davies_(bishop)) | Suffragan Bishop | Bishops | [pages 3-3 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-southern-suffragans-election-addresses.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
+| 47 | [The Rt Revd Rod Green](https://en.wikipedia.org/wiki/Rod_Green) | Suffragan Bishop | Bishops | [pages 5-6 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-southern-suffragans-election-addresses.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
+| 48 | [The Rt Revd Robert Springett](https://en.wikipedia.org/wiki/Robert_Springett) | Suffragan Bishop | Bishops | [pages 7-7 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-southern-suffragans-election-addresses.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
+| 49 | [The Rt Revd Paul Thomas](https://en.wikipedia.org/wiki/Paul_Thomas_(bishop)) | Suffragan Bishop | Bishops | [pages 8-8 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-southern-suffragans-election-addresses.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
+| 50 | [The Rt Revd Arun Arora](https://en.wikipedia.org/wiki/Arun_Arora) | Suffragan Bishop | Bishops | [pages 1-1 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-northern-suffragans-election-addresses.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
+| 51 | [The Rt Revd Jill Duff](https://en.wikipedia.org/wiki/Jill_Duff) | Suffragan Bishop | Bishops | [pages 2-2 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-northern-suffragans-election-addresses.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
+| 52 | [The Rt Revd Simon Robinson](https://en.wikipedia.org/wiki/Simon_Robinson_(bishop)) | Suffragan Bishop | Bishops | [pages 3-3 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-northern-suffragans-election-addresses.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
+| 53 | [The Rt Revd Dr Eleanor Sanderson](https://en.wikipedia.org/wiki/Eleanor_Sanderson) | Suffragan Bishop | Bishops | [pages 5-5 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-northern-suffragans-election-addresses.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
 
 ## House of Clergy
 
 | GS | Name | Constituency | House | Statement | Note |
 |---:|---|---|---|---|---|
-| 54 | The Very Revd Dr Mandy Ford | Deans | Clergy | [pages 2-2 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/election-addresses-southern-deans.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
-| 55 | The Very Revd Dr Jessica Martin | Deans | Clergy | [pages 3-3 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/election-addresses-southern-deans.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
-| 56 | The Very Revd Nick Papadopulos | Deans | Clergy | [pages 5-6 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/election-addresses-southern-deans.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
-| 57 | The Very Revd John Dobson | Deans | Clergy | [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) | Northern deans: the nomination page of the national PDF says 'No election address supplied'; the election was uncontested |
-| 58 | The Very Revd Tim Stratford | Deans | Clergy | [pages 2-2 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/election-addresses-northern-deans.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
+| 54 | [The Very Revd Dr Mandy Ford](https://en.wikipedia.org/wiki/Mandy_Ford) | Deans | Clergy | [pages 2-2 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/election-addresses-southern-deans.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
+| 55 | [The Very Revd Dr Jessica Martin](https://en.wikipedia.org/wiki/Jessica_Martin_(priest)) | Deans | Clergy | [pages 3-3 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/election-addresses-southern-deans.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
+| 56 | [The Very Revd Nick Papadopulos](https://en.wikipedia.org/wiki/Nick_Papadopulos) | Deans | Clergy | [pages 5-6 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/election-addresses-southern-deans.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
+| 57 | [The Very Revd John Dobson](https://en.wikipedia.org/wiki/John_Dobson_(priest)) | Deans | Clergy | [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) | Northern deans: the nomination page of the national PDF says 'No election address supplied'; the election was uncontested |
+| 58 | [The Very Revd Tim Stratford](https://en.wikipedia.org/wiki/Tim_Stratford) | Deans | Clergy | [pages 2-2 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/election-addresses-northern-deans.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
 | 59 | The Revd Helen Drever | Bath and Wells | Clergy | [statement](https://bathandwells.org.uk/wp-content/uploads/2026/09/1C-helen-drever-election-address-1.pdf) · [source page](https://bathandwells.org.uk/who-we-are/general-synod/general-synod-elections/) |  |
 | 60 | The Revd Roger Driver | Bath and Wells | Clergy | [statement](https://bathandwells.org.uk/wp-content/uploads/2026/09/2c-roger-driver-election-address-1.pdf) · [source page](https://bathandwells.org.uk/who-we-are/general-synod/general-synod-elections/) |  |
 | 61 | The Revd Richard Miles | Bath and Wells | Clergy | [statement](https://bathandwells.org.uk/wp-content/uploads/2026/09/3c-richard-miles-election-address-1.pdf) · [source page](https://bathandwells.org.uk/who-we-are/general-synod/general-synod-elections/) |  |
@@ -90,7 +92,7 @@ Generated 2026-11-15 by `agent/make_members_page.py` from `data/members.csv` and
 | 72 | The Revd Kathryn Campion-Spall | Bristol | Clergy | [statement](https://d3hgrlq6yacptf.cloudfront.net/5f3ecfb22c3ee/content/pages/documents/kcs-election-address.pdf) · [source page](https://bristol.anglican.org/aboutus/governance/generalsynod/) |  |
 | 73 | The Revd Wayne Massey | Bristol | Clergy | [statement](https://d3hgrlq6yacptf.cloudfront.net/5f3ecfb22c3ee/content/pages/documents/wayne-massey-election-address.pdf) · [source page](https://bristol.anglican.org/aboutus/governance/generalsynod/) |  |
 | 74 | The Revd Canon Barnabas De Berry | Canterbury | Clergy | [statement](https://canterburydiocese.org/content/pages/documents/barnabas-de-berry.pdf) · [source page](https://canterburydiocese.org/our-life/our-governance/general-synod/) |  |
-| 75 | The Ven Darren Miller | Canterbury | Clergy | [statement](https://canterburydiocese.org/content/pages/documents/darren_miller_election-address-2026.pdf) · [source page](https://canterburydiocese.org/our-life/our-governance/general-synod/) |  |
+| 75 | [The Ven Darren Miller](https://en.wikipedia.org/wiki/Darren_Miller_(priest)) | Canterbury | Clergy | [statement](https://canterburydiocese.org/content/pages/documents/darren_miller_election-address-2026.pdf) · [source page](https://canterburydiocese.org/our-life/our-governance/general-synod/) |  |
 | 76 | The Revd Rachel Webbley | Canterbury | Clergy | [statement](https://canterburydiocese.org/content/pages/documents/rachel-webbley.pdf) · [source page](https://canterburydiocese.org/our-life/our-governance/general-synod/) |  |
 | 77 | The Revd Andrew Burrell | Carlisle | Clergy | [statement](https://cofecarlisle.contentfiles.net/media/documents/document/2026/09/Andrew_Burrell_lG72CuT.pdf) · [source page](https://www.carlislediocese.org.uk/general-synod/) |  |
 | 78 | The Ven Stewart Fyfe | Carlisle | Clergy | [statement](https://cofecarlisle.contentfiles.net/media/documents/document/2026/09/Stewart_Fyfe.pdf) · [source page](https://www.carlislediocese.org.uk/general-synod/) |  |
@@ -131,14 +133,14 @@ Generated 2026-11-15 by `agent/make_members_page.py` from `data/members.csv` and
 | 113 | The Revd Fiona Jack | Europe | Clergy | [statement](https://www.europe.anglican.org/sites/default/files/2026-09/Fiona%20Jack%20Final.docx) · [source page](https://www.europe.anglican.org/resources/house-clergy-candidates-and-election-addresses) |  |
 | 114 | The Revd Vivian Sockett | Europe | Clergy | [statement](https://www.europe.anglican.org/sites/default/files/2026-09/1170_48_Vivian_Sockett_The%20Revd%20Vivian%20Sockett_GS%20candidate%20address_FINAL.pdf) · [source page](https://www.europe.anglican.org/resources/house-clergy-candidates-and-election-addresses) |  |
 | 115 | The Revd Preb Rosie Austin | Exeter | Clergy | [statement](https://exeter.anglican.org/wp-content/uploads/2026/09/Rosie-Austin-2.pdf) · [source page](https://exeter.anglican.org/who-we-are/synod/general-synod/) |  |
-| 116 | The Ven Douglas Dettmer | Exeter | Clergy | [statement](https://exeter.anglican.org/wp-content/uploads/2026/09/Douglas-Dettmer.pdf) · [source page](https://exeter.anglican.org/who-we-are/synod/general-synod/) |  |
+| 116 | [The Ven Douglas Dettmer](https://en.wikipedia.org/wiki/Douglas_Dettmer) | Exeter | Clergy | [statement](https://exeter.anglican.org/wp-content/uploads/2026/09/Douglas-Dettmer.pdf) · [source page](https://exeter.anglican.org/who-we-are/synod/general-synod/) |  |
 | 117 | The Revd Graham Hamilton | Exeter | Clergy | [statement](https://exeter.anglican.org/wp-content/uploads/2026/09/Graham-Hamilton.pdf) · [source page](https://exeter.anglican.org/who-we-are/synod/general-synod/) |  |
-| 118 | The Revd Canon Prof Morwenna Ludlow | Exeter | Clergy | [statement](https://exeter.anglican.org/wp-content/uploads/2026/09/Morwenna-Ludlow.pdf) · [source page](https://exeter.anglican.org/who-we-are/synod/general-synod/) |  |
+| 118 | [The Revd Canon Prof Morwenna Ludlow](https://en.wikipedia.org/wiki/Morwenna_Ludlow) | Exeter | Clergy | [statement](https://exeter.anglican.org/wp-content/uploads/2026/09/Morwenna-Ludlow.pdf) · [source page](https://exeter.anglican.org/who-we-are/synod/general-synod/) |  |
 | 119 | The Revd Tandy Ruoff | Exeter | Clergy | [statement](https://exeter.anglican.org/wp-content/uploads/2026/09/Tandy-Ruoff.pdf) · [source page](https://exeter.anglican.org/who-we-are/synod/general-synod/) |  |
 | 120 | The Revd Jennifer Fellows | Gloucester | Clergy | [statement](https://gloucester.anglican.org/wp-content/uploads/2026/09/HoC-Jennifer-Fellows-Election-Address-2026.pdf) · [source page](https://gloucester.anglican.org/2026/your-candidates-for-general-synod/) |  |
 | 121 | The Ven Katrina Scott | Gloucester | Clergy | [statement](https://gloucester.anglican.org/wp-content/uploads/2026/09/HoC-Katrina-Scott-Election-Address-2026.pdf) · [source page](https://gloucester.anglican.org/2026/your-candidates-for-general-synod/) |  |
 | 122 | The Revd James Turk | Gloucester | Clergy | [statement](https://gloucester.anglican.org/wp-content/uploads/2026/09/HoC-James-Turk-Election-Address-2026.pdf) · [source page](https://gloucester.anglican.org/2026/your-candidates-for-general-synod/) |  |
-| 123 | The Ven Martin Breadmore | Guildford | Clergy | [statement](https://cofeguildford.org.uk/content/pages/documents/gs26-bm-address.pdf) · [source page](https://cofeguildford.org.uk/about-us/governance/general-synod/) |  |
+| 123 | [The Ven Martin Breadmore](https://en.wikipedia.org/wiki/Martin_Breadmore) | Guildford | Clergy | [statement](https://cofeguildford.org.uk/content/pages/documents/gs26-bm-address.pdf) · [source page](https://cofeguildford.org.uk/about-us/governance/general-synod/) |  |
 | 124 | The Revd Dr Peter Nevins | Guildford | Clergy | [statement](https://cofeguildford.org.uk/content/pages/documents/gs26-np-address.pdf) · [source page](https://cofeguildford.org.uk/about-us/governance/general-synod/) |  |
 | 125 | The Revd Mark Wallace | Guildford | Clergy | [statement](https://cofeguildford.org.uk/content/pages/documents/gs26-wm-address.pdf) · [source page](https://cofeguildford.org.uk/about-us/governance/general-synod/) |  |
 | 126 | The Revd Jo Winn-Smith | Guildford | Clergy | [statement](https://cofeguildford.org.uk/content/pages/documents/gs26-wsj-address.pdf) · [source page](https://cofeguildford.org.uk/about-us/governance/general-synod/) |  |
@@ -167,14 +169,14 @@ Generated 2026-11-15 by `agent/make_members_page.py` from `data/members.csv` and
 | 149 | The Revd Dr Philip Anderson | Liverpool | Clergy | [statement](https://liverpoolcofe.org/wp-content/uploads/2026/09/Philip_Anderson.pdf) · [source page](https://liverpoolcofe.org/about-our-governance/general-synod-2026/) |  |
 | 150 | The Revd Rebecca Lloyd | Liverpool | Clergy | [statement](https://liverpoolcofe.org/wp-content/uploads/2026/09/Rebecca_Mary_Lloyd.pdf) · [source page](https://liverpoolcofe.org/about-our-governance/general-synod-2026/) |  |
 | 151 | The Revd Kimberley Mannings | Liverpool | Clergy | [statement](https://liverpoolcofe.org/wp-content/uploads/2026/09/Kimberley_Mannings.pdf) · [source page](https://liverpoolcofe.org/about-our-governance/general-synod-2026/) |  |
-| 152 | The Ven Dr Miranda Threlfall-Holmes | Liverpool | Clergy | [statement](https://liverpoolcofe.org/wp-content/uploads/2026/09/Miranda_Threlfall-Holmes.pdf) · [source page](https://liverpoolcofe.org/about-our-governance/general-synod-2026/) |  |
+| 152 | [The Ven Dr Miranda Threlfall-Holmes](https://en.wikipedia.org/wiki/Miranda_Threlfall-Holmes) | Liverpool | Clergy | [statement](https://liverpoolcofe.org/wp-content/uploads/2026/09/Miranda_Threlfall-Holmes.pdf) · [source page](https://liverpoolcofe.org/about-our-governance/general-synod-2026/) |  |
 | 153 | The Revd Canon Kate Wharton | Liverpool | Clergy | [statement](https://liverpoolcofe.org/wp-content/uploads/2026/09/Kate_Elizabeth_Warton.pdf) · [source page](https://liverpoolcofe.org/about-our-governance/general-synod-2026/) |  |
 | 154 | The Revd Dr Sarah Archer | London | Clergy | [statement](https://www.london.anglican.org/wp-content/uploads/2026/09/1150_1714_Sarah_Archer_Sarah-Archer-General-Synod-Address-.pdf) · [source page](https://www.london.anglican.org/church-and-parish-support/governance-pccs-and-synods/stand-for-general-synod/general-synod-elections-2026-candidates-and-election-addresses/) |  |
 | 155 | The Revd Dr Simon Cuff | London | Clergy | [statement](https://www.london.anglican.org/wp-content/uploads/2026/09/1150_167_Simon_Cuff_Simon-Cuff-Election-Address.pdf) · [source page](https://www.london.anglican.org/church-and-parish-support/governance-pccs-and-synods/stand-for-general-synod/general-synod-elections-2026-candidates-and-election-addresses/) |  |
 | 156 | The Revd Lis Goddard | London | Clergy | [statement](https://www.london.anglican.org/wp-content/uploads/2026/09/1150_270_Elisabeth_Goddard_Reverend-Lis-Goddard-General-Synod-Election-Address-2026-.pdf) · [source page](https://www.london.anglican.org/church-and-parish-support/governance-pccs-and-synods/stand-for-general-synod/general-synod-elections-2026-candidates-and-election-addresses/) |  |
-| 157 | The Revd Nicky Gumbel | London | Clergy | [statement](https://www.london.anglican.org/wp-content/uploads/2026/09/1150_285_Nicholas-_Gumbel_General-Synod-Manifesto-Nicholas-Gumbel.pdf) · [source page](https://www.london.anglican.org/church-and-parish-support/governance-pccs-and-synods/stand-for-general-synod/general-synod-elections-2026-candidates-and-election-addresses/) |  |
+| 157 | [The Revd Nicky Gumbel](https://en.wikipedia.org/wiki/Nicky_Gumbel) | London | Clergy | [statement](https://www.london.anglican.org/wp-content/uploads/2026/09/1150_285_Nicholas-_Gumbel_General-Synod-Manifesto-Nicholas-Gumbel.pdf) · [source page](https://www.london.anglican.org/church-and-parish-support/governance-pccs-and-synods/stand-for-general-synod/general-synod-elections-2026-candidates-and-election-addresses/) |  |
 | 158 | The Revd Sarah Jackson | London | Clergy | [statement](https://www.london.anglican.org/wp-content/uploads/2026/09/1150_348_Sarah_Jackson_Sarah-Jackson-Candidate-Address-General-Synod-Elections-2026.pdf) · [source page](https://www.london.anglican.org/church-and-parish-support/governance-pccs-and-synods/stand-for-general-synod/general-synod-elections-2026-candidates-and-election-addresses/) |  |
-| 159 | The Ven Luke Miller | London | Clergy | [statement](https://www.london.anglican.org/wp-content/uploads/2026/09/1150_457_Luke_Miller_General-Synod_L_MILLER_Statement.pdf) · [source page](https://www.london.anglican.org/church-and-parish-support/governance-pccs-and-synods/stand-for-general-synod/general-synod-elections-2026-candidates-and-election-addresses/) |  |
+| 159 | [The Ven Luke Miller](https://en.wikipedia.org/wiki/Luke_Miller) | London | Clergy | [statement](https://www.london.anglican.org/wp-content/uploads/2026/09/1150_457_Luke_Miller_General-Synod_L_MILLER_Statement.pdf) · [source page](https://www.london.anglican.org/church-and-parish-support/governance-pccs-and-synods/stand-for-general-synod/general-synod-elections-2026-candidates-and-election-addresses/) |  |
 | 160 | The Revd Christopher Ramsay | London | Clergy | [statement](https://www.london.anglican.org/wp-content/uploads/2026/09/1150_545_Christopher_Ramsay_Christopher-Ramsay-General-Synod-Statement-final-version.pdf) · [source page](https://www.london.anglican.org/church-and-parish-support/governance-pccs-and-synods/stand-for-general-synod/general-synod-elections-2026-candidates-and-election-addresses/) |  |
 | 161 | The Revd Charlie Skrine | London | Clergy | [statement](https://www.london.anglican.org/wp-content/uploads/2026/09/1150_607_Charlie_Skrine__Charlie-Skrine-General-Synod-2026.pdf) · [source page](https://www.london.anglican.org/church-and-parish-support/governance-pccs-and-synods/stand-for-general-synod/general-synod-elections-2026-candidates-and-election-addresses/) |  |
 | 162 | The Revd Jody Stowell | London | Clergy | [statement](https://www.london.anglican.org/wp-content/uploads/2026/09/1150_627_Jody_Stowell_Jody-Stowell-General-Synod-Election-Address-2026-.2.pdf) · [source page](https://www.london.anglican.org/church-and-parish-support/governance-pccs-and-synods/stand-for-general-synod/general-synod-elections-2026-candidates-and-election-addresses/) |  |
@@ -191,7 +193,7 @@ Generated 2026-11-15 by `agent/make_members_page.py` from `data/members.csv` and
 | 173 | The Revd Canon Donna Williams | Manchester | Clergy | [statement](https://www.manchester.anglican.org/wp-content/uploads/2026/09/Donna-_Williams.pdf) · [source page](https://www.manchester.anglican.org/our-diocese/about-us/governance/general-synod/) |  |
 | 174 | The Revd Canon Hannah Cleugh | Newcastle | Clergy | [statement](https://newcastle.anglican.org/content/pages/documents/1125_46_hannah_cleugh_hannah-cleugh-gs-election-address-2026.pdf) · [source page](https://newcastle.anglican.org/about-us/governance/general-synod/general-synod-elections/) |  |
 | 175 | The Revd Canon Ian Flintoft | Newcastle | Clergy | [statement](https://newcastle.anglican.org/content/pages/documents/1125_76_ian-_flintoft-_if-general-synod-election-address-2026.pdf) · [source page](https://newcastle.anglican.org/about-us/governance/general-synod/general-synod-elections/) |  |
-| 176 | The Ven Catherine Sourbut Groves | Newcastle | Clergy | [statement](https://newcastle.anglican.org/content/pages/documents/1125_97_catherine_sourbut-groves_gs2026.pdf) · [source page](https://newcastle.anglican.org/about-us/governance/general-synod/general-synod-elections/) |  |
+| 176 | [The Ven Catherine Sourbut Groves](https://en.wikipedia.org/wiki/Catherine_Sourbut_Groves) | Newcastle | Clergy | [statement](https://newcastle.anglican.org/content/pages/documents/1125_97_catherine_sourbut-groves_gs2026.pdf) · [source page](https://newcastle.anglican.org/about-us/governance/general-synod/general-synod-elections/) |  |
 | 177 | The Revd Graham Kirk-Spriggs | Norwich | Clergy | [statement](https://www.dioceseofnorwich.org/wp-content/uploads/2026/09/Revd-Graham-Kirk-Spriggs.pdf) · [source page](https://www.dioceseofnorwich.org/about/norwich-diocesan-board-of-finance-ndbf/synods-and-boards/general-synod/) |  |
 | 178 | The Revd Hannah Morris | Norwich | Clergy | [statement](https://www.dioceseofnorwich.org/wp-content/uploads/2026/09/Revd-Hannah-Morris.pdf) · [source page](https://www.dioceseofnorwich.org/about/norwich-diocesan-board-of-finance-ndbf/synods-and-boards/general-synod/) |  |
 | 179 | The Revd Dr Patrick Richmond | Norwich | Clergy | [statement](https://www.dioceseofnorwich.org/wp-content/uploads/2026/09/Revd-Dr-Patrick-Richmond.pdf) · [source page](https://www.dioceseofnorwich.org/about/norwich-diocesan-board-of-finance-ndbf/synods-and-boards/general-synod/) |  |
@@ -204,7 +206,7 @@ Generated 2026-11-15 by `agent/make_members_page.py` from `data/members.csv` and
 | 186 | The Revd Canon Dr William Lamb | Oxford | Clergy | [statement](https://oxford.anglican.org/wp-content/uploads/2026/10/William-Lamb-election-address.pdf) · [source page](https://www.oxford.anglican.org/who-we-are/how-we-are-governed/general-synod/) |  |
 | 187 | The Revd Jeremy Moodey | Oxford | Clergy | [statement](https://mcusercontent.com/14501d5eebc3e98fa3015a290/files/c2c619d2-7400-7807-c655-7d56747c1f62/1169_398_Jeremy_Moodey_Election_address_Jeremy_Moodey_2026.pdf) · [source page](https://www.oxford.anglican.org/who-we-are/how-we-are-governed/general-synod/) |  |
 | 188 | The Revd Dr Stephen O'Connor | Oxford | Clergy | [statement](https://mcusercontent.com/14501d5eebc3e98fa3015a290/files/011ee650-1577-883a-cb8a-183068910e3a/1169_552_Stephen_James_O_039_Connor_ELECTION_ADDRESS_1_.pdf) · [source page](https://www.oxford.anglican.org/who-we-are/how-we-are-governed/general-synod/) |  |
-| 189 | The Revd Canon Vaughan Roberts | Oxford | Clergy | [statement](https://mcusercontent.com/14501d5eebc3e98fa3015a290/files/d65b9b7b-1254-fe4e-4d16-5cf77096f2fe/1169_148_Vaughan_Roberts_Vaughan_Roberts_General_Synod_Election_Address_2026_2_.pdf) · [source page](https://www.oxford.anglican.org/who-we-are/how-we-are-governed/general-synod/) |  |
+| 189 | [The Revd Canon Vaughan Roberts](https://en.wikipedia.org/wiki/Vaughan_Roberts) | Oxford | Clergy | [statement](https://mcusercontent.com/14501d5eebc3e98fa3015a290/files/d65b9b7b-1254-fe4e-4d16-5cf77096f2fe/1169_148_Vaughan_Roberts_Vaughan_Roberts_General_Synod_Election_Address_2026_2_.pdf) · [source page](https://www.oxford.anglican.org/who-we-are/how-we-are-governed/general-synod/) |  |
 | 190 | The Ven David Tyler | Oxford | Clergy | [statement](https://mcusercontent.com/14501d5eebc3e98fa3015a290/files/4cceed90-3e33-543d-75c7-f348174475ed/1169_292_David_Tyler_David_Stuart_Tyler_ndash_Election_Address_for_General_Synod_Elections.pdf) · [source page](https://www.oxford.anglican.org/who-we-are/how-we-are-governed/general-synod/) |  |
 | 191 | The Revd Andrew Birks | Peterborough | Clergy | [statement](https://peterborough-diocese.org.uk/wp-content/uploads/2026/09/1154_167_Andrew_Birks_Election-Address-Andrew-BIRKS.pdf) · [source page](https://peterborough-diocese.org.uk/about-us/governance/elections-for-new-general-synod-members-in-2026/) |  |
 | 192 | The Ven Alison Booker | Peterborough | Clergy | [statement](https://peterborough-diocese.org.uk/wp-content/uploads/2026/09/1154_2_Alison_Booker_Ven-Alison-SW-Booker-Election-address.pdf) · [source page](https://peterborough-diocese.org.uk/about-us/governance/elections-for-new-general-synod-members-in-2026/) |  |
@@ -244,7 +246,7 @@ Generated 2026-11-15 by `agent/make_members_page.py` from `data/members.csv` and
 | 226 | The Revd Becky Hancock | Southwell & Nottingham | Clergy | [statement](https://southwell.anglican.org/wp-content/uploads/2026/09/Becky-Hancock-Election-Address.pdf) · [source page](https://southwell.anglican.org/gs-elections-2026-election-addresses-and-other-electoral-material/) |  |
 | 227 | The Revd Jo Lees-Robinson | Southwell & Nottingham | Clergy | [statement](https://southwell.anglican.org/wp-content/uploads/2026/09/Jo-Lees-Robinson-Election-Address.pdf) · [source page](https://southwell.anglican.org/gs-elections-2026-election-addresses-and-other-electoral-material/) |  |
 | 228 | The Revd Dr Ian Paul | Southwell & Nottingham | Clergy | [statement](https://southwell.anglican.org/wp-content/uploads/2026/09/Ian-Paul-Election-Address.pdf) · [source page](https://southwell.anglican.org/gs-elections-2026-election-addresses-and-other-electoral-material/) |  |
-| 229 | The Ven Clive Hogger | Truro | Clergy | [statement](https://trurodiocese.org.uk/wp-content/uploads/2026/09/HoC-Clive-Hogger-Election-Address-2026.pdf) · [source page](https://trurodiocese.org.uk/resources/policy-governance/general-synod/gsreps/) |  |
+| 229 | [The Ven Clive Hogger](https://en.wikipedia.org/wiki/Clive_Hogger) | Truro | Clergy | [statement](https://trurodiocese.org.uk/wp-content/uploads/2026/09/HoC-Clive-Hogger-Election-Address-2026.pdf) · [source page](https://trurodiocese.org.uk/resources/policy-governance/general-synod/gsreps/) |  |
 | 230 | The Revd Anna Hyde | Truro | Clergy | [statement](https://trurodiocese.org.uk/wp-content/uploads/2026/09/HoC-Anna-Louise-Hyde-Election-Address-2026.pdf) · [source page](https://trurodiocese.org.uk/resources/policy-governance/general-synod/gsreps/) |  |
 | 231 | The Revd Andrew Yates | Truro | Clergy | [statement](https://trurodiocese.org.uk/wp-content/uploads/2026/09/HoC-Andrew-Yates-Election-Address-2026.pdf) · [source page](https://trurodiocese.org.uk/resources/policy-governance/general-synod/gsreps/) |  |
 | 232 | The Revd Dr Timothy Matthews | Winchester | Clergy | [statement](https://winchesterdiocese.org/wp-content/uploads/2026/09/Timothy_Matthews_Rev-Dr-Tim-Matthews_GS-Election-Address_2026-1.pdf) · [source page](https://winchesterdiocese.org/governance/general-synod-elections-2026/) |  |
@@ -266,7 +268,7 @@ Generated 2026-11-15 by `agent/make_members_page.py` from `data/members.csv` and
 | GS | Name | Constituency | House | Statement | Note |
 |---:|---|---|---|---|---|
 | 245 | Christina Baron | Bath and Wells | Laity | [statement](https://bathandwells.org.uk/wp-content/uploads/2026/09/2L-christina-baron-election-address-1.pdf) · [source page](https://bathandwells.org.uk/who-we-are/general-synod/general-synod-elections/) |  |
-| 246 | Mr James Cary | Bath and Wells | Laity | [statement](https://bathandwells.org.uk/wp-content/uploads/2026/09/5L-james-cary-election-address-1.pdf) · [source page](https://bathandwells.org.uk/who-we-are/general-synod/general-synod-elections/) |  |
+| 246 | [Mr James Cary](https://en.wikipedia.org/wiki/James_Cary_(writer)) | Bath and Wells | Laity | [statement](https://bathandwells.org.uk/wp-content/uploads/2026/09/5L-james-cary-election-address-1.pdf) · [source page](https://bathandwells.org.uk/who-we-are/general-synod/general-synod-elections/) |  |
 | 247 | Mike Hodson | Bath and Wells | Laity | [statement](https://bathandwells.org.uk/wp-content/uploads/2026/09/9L-mike-hodson-election-address-2.docx) · [source page](https://bathandwells.org.uk/who-we-are/general-synod/general-synod-elections/) |  |
 | 248 | Mrs Helen Horsey | Bath and Wells | Laity | [statement](https://bathandwells.org.uk/wp-content/uploads/2026/09/10L-alison-horsey-election-address-1.pdf) · [source page](https://bathandwells.org.uk/who-we-are/general-synod/general-synod-elections/) |  |
 | 249 | Mrs Sarah Packman | Bath and Wells | Laity | [statement](https://bathandwells.org.uk/wp-content/uploads/2026/09/13L-sarah-packman-election-address-1.pdf) · [source page](https://bathandwells.org.uk/who-we-are/general-synod/general-synod-elections/) |  |
@@ -321,7 +323,7 @@ Generated 2026-11-15 by `agent/make_members_page.py` from `data/members.csv` and
 | 298 | Dr Richard Scothon | Durham | Laity | [statement](https://durhamdiocese.org/wp-content/uploads/2026/09/scothon-richard.pdf) · [source page](https://durhamdiocese.org/about-us/governance/general-synod/general-synod-elections/) |  |
 | 299 | Dr Guy Wingate | Durham | Laity | [statement](https://durhamdiocese.org/wp-content/uploads/2026/09/wingate-guy.pdf) · [source page](https://durhamdiocese.org/about-us/governance/general-synod/general-synod-elections/) |  |
 | 300 | Mrs Rebecca Cowburn | Ely | Laity | [statement](https://www.elydiocese.org/content/pages/documents/rebecca-cowburn-gs-election-address-7-sept-2026.pdf) · [source page](https://www.elydiocese.org/about/governance/general-synod/) |  |
-| 301 | Prof Andrew Gordon | Ely | Laity | [statement](https://www.elydiocese.org/content/pages/documents/1140_376_andrew_gordon_andy-gordon-synod-two-pager.pdf) · [source page](https://www.elydiocese.org/about/governance/general-synod/) |  |
+| 301 | [Prof Andrew Gordon](https://en.wikipedia.org/wiki/Andrew_D._Gordon) | Ely | Laity | [statement](https://www.elydiocese.org/content/pages/documents/1140_376_andrew_gordon_andy-gordon-synod-two-pager.pdf) · [source page](https://www.elydiocese.org/about/governance/general-synod/) |  |
 | 302 | Mr Christopher Townsend | Ely | Laity | [statement](https://www.elydiocese.org/content/pages/documents/1140_540_christopher_townsend_election-address-2026-c-townsend-final-.pdf) · [source page](https://www.elydiocese.org/about/governance/general-synod/) |  |
 | 303 | Mr Willy Basengimana | Europe | Laity | [statement](https://www.europe.anglican.org/sites/default/files/2026-09/1170_380_Willy%20Joseph_Basengimana_General%20Synod%20election%20candidate%20adress.pdf) · [source page](https://www.europe.anglican.org/resources/house-laity-candidates-and-election-addresses) |  |
 | 304 | Mr Lester Carissimi | Europe | Laity | [statement](https://www.europe.anglican.org/sites/default/files/2026-09/1170_454_Lester_Carissimi_Lester%20Carissimi%20Election%20Address.pdf) · [source page](https://www.europe.anglican.org/resources/house-laity-candidates-and-election-addresses) |  |
@@ -329,7 +331,7 @@ Generated 2026-11-15 by `agent/make_members_page.py` from `data/members.csv` and
 | 306 | Mrs Jill Caporn | Exeter | Laity | [statement](https://exeter.anglican.org/wp-content/uploads/2026/09/Jill-Caporn.pdf) · [source page](https://exeter.anglican.org/who-we-are/synod/general-synod/) |  |
 | 307 | Mr Simon Friend | Exeter | Laity | [statement](https://exeter.anglican.org/wp-content/uploads/2026/09/Simon-Friend.pdf) · [source page](https://exeter.anglican.org/who-we-are/synod/general-synod/) |  |
 | 308 | Dr Kerry Gilbert | Exeter | Laity | [statement](https://exeter.anglican.org/wp-content/uploads/2026/09/Kerry-Gilbert.pdf) · [source page](https://exeter.anglican.org/who-we-are/synod/general-synod/) |  |
-| 309 | Dr Bijan Omrani | Exeter | Laity | [statement](https://exeter.anglican.org/wp-content/uploads/2026/09/Bijan-Omrani.pdf) · [source page](https://exeter.anglican.org/who-we-are/synod/general-synod/) |  |
+| 309 | [Dr Bijan Omrani](https://en.wikipedia.org/wiki/Bijan_Omrani) | Exeter | Laity | [statement](https://exeter.anglican.org/wp-content/uploads/2026/09/Bijan-Omrani.pdf) · [source page](https://exeter.anglican.org/who-we-are/synod/general-synod/) |  |
 | 310 | Dr Francis Sansbury | Exeter | Laity | [statement](https://exeter.anglican.org/wp-content/uploads/2026/09/Francis-Hugh-Sansbury.pdf) · [source page](https://exeter.anglican.org/who-we-are/synod/general-synod/) |  |
 | 311 | Mr Henry Cole | Gloucester | Laity | [statement](https://gloucester.anglican.org/wp-content/uploads/2026/09/HoL-Henry-Cole-Election-Address-2026.pdf) · [source page](https://gloucester.anglican.org/2026/your-candidates-for-general-synod/) |  |
 | 312 | Canon Karen Czapiewski | Gloucester | Laity | [statement](https://gloucester.anglican.org/wp-content/uploads/2026/09/HoL-Karen-Czapiewski-Election-Address-2026.pdf) · [source page](https://gloucester.anglican.org/2026/your-candidates-for-general-synod/) |  |
@@ -345,7 +347,7 @@ Generated 2026-11-15 by `agent/make_members_page.py` from `data/members.csv` and
 | 322 | Mrs Jo Beacroft-Mitchell | Leeds | Laity | [statement](https://leeds.anglican.org/content/pages/documents/candidates-statement-joanna_beacroft-mitchell.pdf) · [source page](https://leeds.anglican.org/who-we-are/our-diocese/synods/general-synod-member-elections/general-synod-elections-2026-candidates/) |  |
 | 323 | Mrs Helen Eskriett | Leeds | Laity | [statement](https://leeds.anglican.org/content/pages/documents/candidates-statement-helen_eskriett.pdf) · [source page](https://leeds.anglican.org/who-we-are/our-diocese/synods/general-synod-member-elections/general-synod-elections-2026-candidates/) |  |
 | 324 | Mr Hugh Lorimer | Leeds | Laity | [statement](https://leeds.anglican.org/content/pages/documents/candidates-statement-hugh-lorimer.pdf) · [source page](https://leeds.anglican.org/who-we-are/our-diocese/synods/general-synod-member-elections/general-synod-elections-2026-candidates/) |  |
-| 325 | Sir Richard Mantle | Leeds | Laity | [statement](https://leeds.anglican.org/content/pages/documents/candidates-statement-richard-mantle27554444522.pdf) · [source page](https://leeds.anglican.org/who-we-are/our-diocese/synods/general-synod-member-elections/general-synod-elections-2026-candidates/) |  |
+| 325 | [Sir Richard Mantle](https://en.wikipedia.org/wiki/Richard_Mantle) | Leeds | Laity | [statement](https://leeds.anglican.org/content/pages/documents/candidates-statement-richard-mantle27554444522.pdf) · [source page](https://leeds.anglican.org/who-we-are/our-diocese/synods/general-synod-member-elections/general-synod-elections-2026-candidates/) |  |
 | 326 | Mr Keith Miller | Leeds | Laity | [statement](https://leeds.anglican.org/content/pages/documents/candidates-statement-keith_miller33098764949.pdf) · [source page](https://leeds.anglican.org/who-we-are/our-diocese/synods/general-synod-member-elections/general-synod-elections-2026-candidates/) |  |
 | 327 | Mrs Judith Osborne | Leeds | Laity | [statement](https://leeds.anglican.org/content/pages/documents/candidates-statement-judith_osborne89200674089.pdf) · [source page](https://leeds.anglican.org/who-we-are/our-diocese/synods/general-synod-member-elections/general-synod-elections-2026-candidates/) |  |
 | 328 | Associate Prof Leonard Sanderman | Leeds | Laity | [statement](https://leeds.anglican.org/content/pages/documents/candidates-statement-leonard_sanderman59207791936.pdf) · [source page](https://leeds.anglican.org/who-we-are/our-diocese/synods/general-synod-member-elections/general-synod-elections-2026-candidates/) |  |
@@ -369,7 +371,7 @@ Generated 2026-11-15 by `agent/make_members_page.py` from `data/members.csv` and
 | 346 | Mrs Nadine Daniel | Liverpool | Laity | [statement](https://liverpoolcofe.org/wp-content/uploads/2026/09/Nadine_Samantha_Daniel.pdf) · [source page](https://liverpoolcofe.org/about-our-governance/general-synod-2026/) |  |
 | 347 | Mr Richard Denno | Liverpool | Laity | [statement](https://liverpoolcofe.org/wp-content/uploads/2026/09/Richard_Christopher_Somer_Denno.pdf) · [source page](https://liverpoolcofe.org/about-our-governance/general-synod-2026/) |  |
 | 348 | Mrs Jessica Howard | Liverpool | Laity | [statement](https://liverpoolcofe.org/wp-content/uploads/2026/09/Jessica_Howard.pdf) · [source page](https://liverpoolcofe.org/about-our-governance/general-synod-2026/) |  |
-| 349 | Mr Philip Baldwin | London | Laity | [statement](https://www.london.anglican.org/wp-content/uploads/2026/09/1150_1700_Philip_Baldwin_PhilipBaldwinElectionAddress2026.pdf) · [source page](https://www.london.anglican.org/church-and-parish-support/governance-pccs-and-synods/stand-for-general-synod/general-synod-elections-2026-candidates-and-election-addresses/) |  |
+| 349 | [Mr Philip Baldwin](https://en.wikipedia.org/wiki/Philip_Baldwin) | London | Laity | [statement](https://www.london.anglican.org/wp-content/uploads/2026/09/1150_1700_Philip_Baldwin_PhilipBaldwinElectionAddress2026.pdf) · [source page](https://www.london.anglican.org/church-and-parish-support/governance-pccs-and-synods/stand-for-general-synod/general-synod-elections-2026-candidates-and-election-addresses/) |  |
 | 350 | Miss Debbie Buggs | London | Laity | [statement](https://www.london.anglican.org/wp-content/uploads/2026/09/1150_884_Debbie_Buggs_Debbie-Buggs-GS-2026-to-go.pdf) · [source page](https://www.london.anglican.org/church-and-parish-support/governance-pccs-and-synods/stand-for-general-synod/general-synod-elections-2026-candidates-and-election-addresses/) |  |
 | 351 | Mr David Durlacher | London | Laity | [statement](https://www.london.anglican.org/wp-content/uploads/2026/09/1150_1011_David_Durlacher_David-Durlacher-statement.pdf) · [source page](https://www.london.anglican.org/church-and-parish-support/governance-pccs-and-synods/stand-for-general-synod/general-synod-elections-2026-candidates-and-election-addresses/) |  |
 | 352 | Mr Timothy Foot | London | Laity | [statement](https://www.london.anglican.org/wp-content/uploads/2026/09/1150_1055_Timothy_Foot_Timothy-Foot_address_final.pdf) · [source page](https://www.london.anglican.org/church-and-parish-support/governance-pccs-and-synods/stand-for-general-synod/general-synod-elections-2026-candidates-and-election-addresses/) |  |
@@ -398,7 +400,7 @@ Generated 2026-11-15 by `agent/make_members_page.py` from `data/members.csv` and
 | 375 | Dr Gracy Crane | Oxford | Laity | [statement](https://mcusercontent.com/14501d5eebc3e98fa3015a290/files/d4d6031b-d8eb-76e3-a5a7-653b36aac9af/1169_1302_Gracy_Crane__Gracy_Crane_election_address_final_2_.pdf) · [source page](https://www.oxford.anglican.org/who-we-are/how-we-are-governed/general-synod/) |  |
 | 376 | Miss Prudence Dailey | Oxford | Laity | [statement](https://mcusercontent.com/14501d5eebc3e98fa3015a290/files/f827c16f-aed8-87a2-6d6c-5813f1194196/1169_790_Prudence_Dailey_PMPD_GS_election_address_2026.pdf) · [source page](https://www.oxford.anglican.org/who-we-are/how-we-are-governed/general-synod/) |  |
 | 377 | Canon Julie Dziegiel | Oxford | Laity | [statement](https://mcusercontent.com/14501d5eebc3e98fa3015a290/files/56679e99-c0ce-2126-b64a-703337a3d4a6/Julie_DZIEGIEL_PDF_Election_Address_2026.pdf) · [source page](https://www.oxford.anglican.org/who-we-are/how-we-are-governed/general-synod/) |  |
-| 378 | Prof Emerita Helen King | Oxford | Laity | [statement](https://mcusercontent.com/14501d5eebc3e98fa3015a290/files/28f242ea-5276-60e1-be6a-1963eccb63f2/1169_1180_Helen_King_Helen_King_1_.pdf) · [source page](https://www.oxford.anglican.org/who-we-are/how-we-are-governed/general-synod/) |  |
+| 378 | [Prof Emerita Helen King](https://en.wikipedia.org/wiki/Helen_King_(classicist)) | Oxford | Laity | [statement](https://mcusercontent.com/14501d5eebc3e98fa3015a290/files/28f242ea-5276-60e1-be6a-1963eccb63f2/1169_1180_Helen_King_Helen_King_1_.pdf) · [source page](https://www.oxford.anglican.org/who-we-are/how-we-are-governed/general-synod/) |  |
 | 379 | Mrs Helen Lamb | Oxford | Laity | [statement](https://mcusercontent.com/14501d5eebc3e98fa3015a290/files/eaf88137-8b05-9448-e844-74656bef46d7/1169_775_Helen_Lamb_GenSynod_Election_Statement_2026__LambH.pdf) · [source page](https://www.oxford.anglican.org/who-we-are/how-we-are-governed/general-synod/) |  |
 | 380 | Mrs Helen Savage | Oxford | Laity | [statement](https://mcusercontent.com/14501d5eebc3e98fa3015a290/files/adb47622-aafc-0427-a402-a49ff95549e3/1169_722_Helen_Savage_Helen_Savage_General_Synod_election_address.pdf) · [source page](https://www.oxford.anglican.org/who-we-are/how-we-are-governed/general-synod/) |  |
 | 381 | Miss Alexandra Scott | Oxford | Laity | [statement](https://mcusercontent.com/14501d5eebc3e98fa3015a290/files/ea737a58-19e6-8edb-6c8b-22c454504703/1169_711_Alexandra_Scott_Alexandra_Scott_General_Synod_application_1_.pdf) · [source page](https://www.oxford.anglican.org/who-we-are/how-we-are-governed/general-synod/) |  |
@@ -467,7 +469,7 @@ Generated 2026-11-15 by `agent/make_members_page.py` from `data/members.csv` and
 |---:|---|---|---|---|---|
 | 440 | The Ven Ralph Barber | Armed Forces | Clergy |  | Armed Forces Synod seat (Royal Navy): returned without a count; the Church of England publishes no addresses for this constituency |
 | 441 | The Ven Stephen Dunwoody | Armed Forces | Clergy |  | Armed Forces Synod seat (Army): returned without a count; the Church of England publishes no addresses for this constituency |
-| 442 | The Ven AVM Giles Legood | Armed Forces | Clergy |  | Armed Forces Synod seat (RAF): returned without a count; the Church of England publishes no addresses for this constituency |
+| 442 | [The Ven AVM Giles Legood](https://en.wikipedia.org/wiki/Giles_Legood) | Armed Forces | Clergy |  | Armed Forces Synod seat (RAF): returned without a count; the Church of England publishes no addresses for this constituency |
 
 ## House of Laity
 
@@ -495,8 +497,8 @@ Generated 2026-11-15 by `agent/make_members_page.py` from `data/members.csv` and
 
 | GS | Name | Constituency | House | Statement | Note |
 |---:|---|---|---|---|---|
-| 450 | The Revd Dr Helen Dawes | Universities and TEIs | Clergy | [pages 1-1 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-utei-election-addresses_0.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
-| 451 | The Revd Dr Sean Doherty | Universities and TEIs | Clergy | [pages 2-3 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-utei-election-addresses_0.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
+| 450 | [The Revd Dr Helen Dawes](https://en.wikipedia.org/wiki/Helen_Dawes) | Universities and TEIs | Clergy | [pages 1-1 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-utei-election-addresses_0.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
+| 451 | [The Revd Dr Sean Doherty](https://en.wikipedia.org/wiki/Sean_Doherty_(ethicist)) | Universities and TEIs | Clergy | [pages 2-3 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-utei-election-addresses_0.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
 | 452 | The Revd Dr Steffan Mathias | Universities and TEIs | Clergy | [pages 4-4 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-utei-election-addresses_0.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
 | 453 | The Revd Dr Mark Smith | Universities and TEIs | Clergy | [pages 6-6 of compiled PDF](https://www.churchofengland.org/sites/default/files/2026-10/elected-utei-election-addresses_0.pdf) · [source page](https://www.churchofengland.org/national-bodies/general-synod/elections-synod/general-synod-election-results-2026) |  |
 
@@ -504,25 +506,25 @@ Generated 2026-11-15 by `agent/make_members_page.py` from `data/members.csv` and
 
 | GS | Name | Constituency | House | Statement | Note |
 |---:|---|---|---|---|---|
-| 454 | The Rt Worshipful Morag Ellis | Ex Officio | Laity |  |  |
+| 454 | [The Rt Worshipful Morag Ellis](https://en.wikipedia.org/wiki/Morag_Ellis) | Ex Officio | Laity |  |  |
 | 455 | The Rt Worshipful Timothy Briden | Ex Officio | Laity |  |  |
 | 456 | The Rt Worshipful Gregory Jones KC | Ex Officio | Laity |  |  |
 | 457 | Mr Alan Smith | Ex Officio | Laity |  |  |
-| 458 | Ms Marsha de Cordova | Ex Officio | Laity |  |  |
-| 459 | Sir Robert Buckland | Ex Officio | Laity |  |  |
-| 460 | Mr Clive Mather | Ex Officio | Laity |  |  |
+| 458 | [Ms Marsha de Cordova](https://en.wikipedia.org/wiki/Marsha_de_Cordova) | Ex Officio | Laity |  |  |
+| 459 | [Sir Robert Buckland](https://en.wikipedia.org/wiki/Robert_Buckland) | Ex Officio | Laity |  |  |
+| 460 | [Mr Clive Mather](https://en.wikipedia.org/wiki/Clive_Mather) | Ex Officio | Laity |  |  |
 
 ## House of Clergy
 
 | GS | Name | Constituency | House | Statement | Note |
 |---:|---|---|---|---|---|
-| 461 | The Ven James Ridge | Ex Officio | Clergy |  |  |
+| 461 | [The Ven James Ridge](https://en.wikipedia.org/wiki/James_Ridge_(priest)) | Ex Officio | Clergy |  |  |
 
 ## House of Laity
 
 | GS | Name | Constituency | House | Statement | Note |
 |---:|---|---|---|---|---|
-| 462 | Dame Caroline Spelman | Ex Officio | Laity |  |  |
+| 462 | [Dame Caroline Spelman](https://en.wikipedia.org/wiki/Caroline_Spelman) | Ex Officio | Laity |  |  |
 | 463 | Mr Peter Doyle | Archbishops' Council | Laity |  |  |
 | 464 | Mr Mark Sheard | Archbishops' Council | Laity |  |  |
 | 465 | Mrs Julie Jones | Archbishops' Council | Laity |  |  |

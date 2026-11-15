@@ -54,10 +54,11 @@ def note_cell(r):
 def main():
     members = read("members.csv")
     statements = {r["gs_number"]: r for r in read("statements.csv")}
+    wiki = {r["gs_number"]: r for r in read("wikipedia.csv") if r["status"] in ("confirmed", "likely")}
     held = sum(1 for r in statements.values() if r["status"] in ("downloaded", "compiled", "answers"))
     today = datetime.date.today().isoformat()
     out = [
-        "# Members of the General Synod 2026-2031 and their election statements", "",
+        "# Members of the General Synod 2026-2031: election statements and Wikipedia articles", "",
         f"The names, GS numbers, constituencies and houses follow the Church of England's [list of members]({SOURCE_PDF}) "
         f"(October 2026), in its order. The statement links point to the candidates' election addresses where a diocese or "
         f"the Church of England has published one. The documents themselves are not reproduced here; the links lead to the "
@@ -65,7 +66,9 @@ def main():
         f"Of the {len(statements)} elected members, {held} have a statement linked below. The members without one "
         f"(uncontested seats, or seats held ex officio) carry a note saying why. Members who sit by office, appointment or "
         f"co-option were not elected and have no statements.", "",
-        f"Generated {today} by `agent/make_members_page.py` from `data/members.csv` and `data/statements.csv`.", "",
+        f"A member's name is a link to their English Wikipedia article where one exists ({len(wiki)} members), "
+        f"found by `agent/find_wikipedia.py` and checked against the member's role.", "",
+        f"Generated {today} by `agent/make_members_page.py` from `data/members.csv`, `data/statements.csv` and `data/wikipedia.csv`.", "",
     ]
     section = None
     for m in members:
@@ -76,6 +79,8 @@ def main():
                     "| GS | Name | Constituency | House | Statement | Note |", "|---:|---|---|---|---|---|"]
         r = statements.get(m["gs_number"])
         name = esc(" ".join(x for x in (m["title"], m["first_name"], m["last_name"]) if x))
+        w = wiki.get(m["gs_number"])
+        if w: name = f"[{name}]({w['url']})"
         out.append(f"| {m['gs_number']} | {name} | {esc(m['constituency'])} | {m['house']} | {statement_cell(r)} | {note_cell(r)} |")
     (ROOT / "members.md").write_text("\n".join(out) + "\n", encoding="utf-8")
     print(f"wrote members.md: {len(members)} members, {held} statements linked")
