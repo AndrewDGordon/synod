@@ -1,0 +1,488 @@
+gs_number,constituency,house,title,first_name,last_name
+1,Canterbury,Bishops,The Most Revd Dame,Sarah,Mullally
+2,York,Bishops,The Most Revd,Stephen,Cottrell
+3,London,Non-voting,The Rt Revd Dr,Emma,Ineson
+4,Durham,Bishops,The Rt Revd,Rick,Simpson
+5,Winchester,Bishops,The Rt Revd,Philip,Mounstephen
+6,Bath and Wells,Bishops,The Rt Revd,Michael,Beasley
+7,Birmingham,Bishops,The Rt Revd,Michael,Volland
+8,Blackburn,Bishops,The Rt Revd,Philip,North
+9,Bristol,Non-voting,The Rt Revd,Neil,Warwick
+10,Carlisle,Bishops,The Rt Revd,Rob,Saner-Haigh
+11,Chelmsford,Bishops,The Rt Revd Dr,Guli,Francis-Dehqani
+12,Chester,Bishops,The Rt Revd,Mark,Tanner
+13,Chichester,Non-voting,The Rt Revd,Will,Hazlewood
+14,Coventry,Bishops,The Rt Revd,Sophie,Jelley
+15,Derby,Non-voting,The Rt Revd,Jackie,Searle
+16,Ely,Bishops,The Rt Revd,Sarah,Clark
+17,Europe,Bishops,The Rt Revd Dr,Robert,Innes
+18,Exeter,Bishops,The Rt Revd,Mike,Harrison
+19,Gloucester,Bishops,The Rt Revd,Rachel,Treweek
+20,Guildford,Non-voting,The Rt Revd,Paul,Davies
+21,Hereford,Bishops,The Rt Revd,Richard,Jackson
+22,Leeds,Non-voting,The Rt Revd,Toby,Howarth
+23,Leicester,Bishops,The Rt Revd,Martyn,Snow
+24,Lichfield,Non-voting,The Rt Revd,Sarah,Bullock
+25,Lincoln,Non-voting,The Rt Revd,Nick,Chamberlain
+26,Liverpool,Non-voting,The Rt Revd Dr,Ruth,Worsley
+27,Manchester,Bishops,The Rt Revd,David,Walker
+28,Newcastle,Bishops,The Rt Revd,Helen-Ann,Hartley
+29,Norwich,Bishops,The Rt Revd,Graham,Usher
+30,Oxford,Non-voting,The Rt Revd,Gavin,Collins
+31,Peterborough,Bishops,The Rt Revd,Debbie,Sellin
+32,Portsmouth,Non-voting,The Rt Revd,Geoffrey,Annas
+33,Rochester,Bishops,The Rt Revd Dr,Jonathan,Gibbs
+34,St Albans,Bishops,The Rt Revd Dr,Andrew,Rumsey
+35,St Eds & Ipswich,Bishops,The Rt Revd,Joanne,Grenfell
+36,Salisbury,Non-voting,The Rt Revd,Karen,Gorham
+37,Sheffield,Bishops,The Rt Revd Dr,Pete,Wilcox
+38,Sodor and Man,Bishops,The Rt Revd,Tricia,Hillas
+39,Southwark,Non-voting,The Rt Revd Dr,Rosemarie,Mallett
+40,Southwell & Nottingham,Bishops,The Rt Revd,Paul,Williams
+41,Truro,Bishops,The Rt Revd,David,Williams
+42,Worcester,Bishops,The Rt Revd,Hugh,Nelson
+43,Suffragan Bishop,Bishops,The Rt Revd,Rose,Hudson-Wilkin
+44,Armed Forces,Bishops,,,
+45,Suffragan Bishop,Bishops,The Rt Revd,Gavin,Collins
+46,Suffragan Bishop,Bishops,The Rt Revd,Paul,Davies
+47,Suffragan Bishop,Bishops,The Rt Revd,Rod,Green
+48,Suffragan Bishop,Bishops,The Rt Revd,Robert,Springett
+49,Suffragan Bishop,Bishops,The Rt Revd,Paul,Thomas
+50,Suffragan Bishop,Bishops,The Rt Revd,Arun,Arora
+51,Suffragan Bishop,Bishops,The Rt Revd,Jill,Duff
+52,Suffragan Bishop,Bishops,The Rt Revd,Simon,Robinson
+53,Suffragan Bishop,Bishops,The Rt Revd Dr,Eleanor,Sanderson
+54,Deans,Clergy,The Very Revd Dr,Mandy,Ford
+55,Deans,Clergy,The Very Revd Dr,Jessica,Martin
+56,Deans,Clergy,The Very Revd,Nick,Papadopulos
+57,Deans,Clergy,The Very Revd,John,Dobson
+58,Deans,Clergy,The Very Revd,Tim,Stratford
+59,Bath and Wells,Clergy,The Revd,Helen,Drever
+60,Bath and Wells,Clergy,The Revd,Roger,Driver
+61,Bath and Wells,Clergy,The Revd,Richard,Miles
+62,Bath and Wells,Clergy,The Revd,Joanna,Stobart
+63,Birmingham,Clergy,The Revd,Jenni,Crewes
+64,Birmingham,Clergy,The Revd Canon,Douglas,Machiridza
+65,Birmingham,Clergy,The Revd Dr,Katie,Stock
+66,Blackburn,Clergy,The Revd,Paul,Benfield
+67,Blackburn,Clergy,The Revd,Katherine,Gregory-Witham
+68,Blackburn,Clergy,The Revd,Jonathon,Lee
+69,Blackburn,Clergy,The Revd,Joanne,Smith
+70,Blackburn,Clergy,The Revd,Tom,Woolford
+71,Bristol,Clergy,The Revd,Adam,Beaumont
+72,Bristol,Clergy,The Revd,Kathryn,Campion-Spall
+73,Bristol,Clergy,The Revd,Wayne,Massey
+74,Canterbury,Clergy,The Revd Canon,Barnabas,De Berry
+75,Canterbury,Clergy,The Ven,Darren,Miller
+76,Canterbury,Clergy,The Revd,Rachel,Webbley
+77,Carlisle,Clergy,The Revd,Andrew,Burrell
+78,Carlisle,Clergy,The Ven,Stewart,Fyfe
+79,Carlisle,Clergy,The Revd,Madi,Simpson
+80,Chelmsford,Clergy,The Revd Canon,Dave,Chesney
+81,Chelmsford,Clergy,The Revd,Neil,Dalley
+82,Chelmsford,Clergy,The Revd,John,Dunnett
+83,Chelmsford,Clergy,The Ven Dr,Sue,Lucas
+84,Chelmsford,Clergy,The Revd Canon,Jane,Richards
+85,Chelmsford,Clergy,The Revd,Amy,Stott
+86,Chester,Clergy,The Revd,Christopher,Blunt
+87,Chester,Clergy,The Revd,Jennifer,Bridgman
+88,Chester,Clergy,The Revd,George,Crowder
+89,Chester,Clergy,The Ven,Jane,Proudfoot
+90,Chester,Clergy,The Revd,Mike,Smith
+91,Chester,Clergy,The Revd,Emma,Speake
+92,Chichester,Clergy,The Ven Dr,Thomas,Carpenter
+93,Chichester,Clergy,The Revd,Anita,Colpus
+94,Chichester,Clergy,The Revd Dr,Jack,Dunn
+95,Chichester,Clergy,The Revd,Martin,Poole
+96,Chichester,Clergy,The Revd,Stephen,Rees
+97,Chichester,Clergy,The Revd,Thomas,Robson
+98,Coventry,Clergy,The Revd,Katie,Cross
+99,Coventry,Clergy,The Revd Canon,Jonathan,Jee
+100,Coventry,Clergy,The Revd Canon,Kate,Massey
+101,Derby,Clergy,The Revd Canon,Julian,Holywell
+102,Derby,Clergy,The Revd,Joanna,Honour
+103,Derby,Clergy,The Revd Canon,Bryony,Taylor
+104,Durham,Clergy,The Revd,Simon,McMurtary TSSF
+105,Durham,Clergy,The Revd Canon,Mark,Miller
+106,Durham,Clergy,The Revd,Donna,Robinson
+107,Durham,Clergy,The Revd Canon,Matthew,Tarling
+108,Ely,Clergy,The Revd Canon,James,Blandford-Baker
+109,Ely,Clergy,The Revd Canon,Sarah,Gower
+110,Ely,Clergy,The Revd Canon,Nick,Moir
+111,Ely,Clergy,The Revd,Kevin,Parks
+112,Europe,Clergy,The Revd,Kasta,Dip
+113,Europe,Clergy,The Revd,Fiona,Jack
+114,Europe,Clergy,The Revd,Vivian,Sockett
+115,Exeter,Clergy,The Revd Preb,Rosie,Austin
+116,Exeter,Clergy,The Ven,Douglas,Dettmer
+117,Exeter,Clergy,The Revd,Graham,Hamilton
+118,Exeter,Clergy,The Revd Canon Prof,Morwenna,Ludlow
+119,Exeter,Clergy,The Revd,Tandy,Ruoff
+120,Gloucester,Clergy,The Revd,Jennifer,Fellows
+121,Gloucester,Clergy,The Ven,Katrina,Scott
+122,Gloucester,Clergy,The Revd,James,Turk
+123,Guildford,Clergy,The Ven,Martin,Breadmore
+124,Guildford,Clergy,The Revd Dr,Peter,Nevins
+125,Guildford,Clergy,The Revd,Mark,Wallace
+126,Guildford,Clergy,The Revd,Jo,Winn-Smith
+127,Hereford,Clergy,The Revd Preb Dr,Christopher,Moore
+128,Hereford,Clergy,The Revd,Kina,Robertshaw
+129,Hereford,Clergy,The Revd,Belinda,Stanley
+130,Leeds,Clergy,The Revd,Richard,Barber
+131,Leeds,Clergy,The Ven,Bill,Braviner
+132,Leeds,Clergy,The Revd Canon,Paul,Cartwright
+133,Leeds,Clergy,The Revd,Mike,Coe
+134,Leeds,Clergy,The Revd Canon,Wendy,Dalrymple
+135,Leeds,Clergy,The Revd,Debbie,Nash
+136,Leeds,Clergy,The Revd Dr,Catherine,Shelley
+137,Leeds,Clergy,The Revd,Robb,Sutherland
+138,Leicester,Clergy,The Revd Canon,Emma,Davies
+139,Leicester,Clergy,The Revd,Tim,Phillips
+140,Leicester,Clergy,The Revd,Simon,Wearn
+141,Lichfield,Clergy,The Ven,Elizabeth,Jackson
+142,Lichfield,Clergy,The Revd Preb,Treena,Larkin
+143,Lichfield,Clergy,The Revd,David,Sims
+144,Lichfield,Clergy,The Revd Canon,Thomas,Stather
+145,Lichfield,Clergy,The Revd Dr,Abigail,Walsh
+146,Lincoln,Clergy,The Revd Canon,Rowena,King
+147,Lincoln,Clergy,The Ven,Eleanor,Robertshaw
+148,Lincoln,Clergy,The Revd Canon Dr,Martyn,Taylor
+149,Liverpool,Clergy,The Revd Dr,Philip,Anderson
+150,Liverpool,Clergy,The Revd,Rebecca,Lloyd
+151,Liverpool,Clergy,The Revd,Kimberley,Mannings
+152,Liverpool,Clergy,The Ven Dr,Miranda,Threlfall-Holmes
+153,Liverpool,Clergy,The Revd Canon,Kate,Wharton
+154,London,Clergy,The Revd Dr,Sarah,Archer
+155,London,Clergy,The Revd Dr,Simon,Cuff
+156,London,Clergy,The Revd,Lis,Goddard
+157,London,Clergy,The Revd,Nicky,Gumbel
+158,London,Clergy,The Revd,Sarah,Jackson
+159,London,Clergy,The Ven,Luke,Miller
+160,London,Clergy,The Revd,Christopher,Ramsay
+161,London,Clergy,The Revd,Charlie,Skrine
+162,London,Clergy,The Revd,Jody,Stowell
+163,London,Clergy,Fr,Robert,Thompson
+164,London,Clergy,The Revd,Christopher,Trundle
+165,London,Clergy,The Revd,Marcus,Walker
+166,Manchester,Clergy,The Revd,Paul,Hutchins
+167,Manchester,Clergy,The Revd,David,Leaf
+168,Manchester,Clergy,The Revd,Kenson,Li
+169,Manchester,Clergy,The Revd,Paul,Pritchard
+170,Manchester,Clergy,The Revd Canon,Andy,Salmon
+171,Manchester,Clergy,The Revd,Gareth,Thomas
+172,Manchester,Clergy,The Revd,Vincent,Whitworth
+173,Manchester,Clergy,The Revd Canon,Donna,Williams
+174,Newcastle,Clergy,The Revd Canon,Hannah,Cleugh
+175,Newcastle,Clergy,The Revd Canon,Ian,Flintoft
+176,Newcastle,Clergy,The Ven,Catherine,Sourbut Groves
+177,Norwich,Clergy,The Revd,Graham,Kirk-Spriggs
+178,Norwich,Clergy,The Revd,Hannah,Morris
+179,Norwich,Clergy,The Revd Dr,Patrick,Richmond
+180,Norwich,Clergy,The Revd Canon,Simon,Ward
+181,Oxford,Clergy,The Revd Dr,Andrew,Atherstone
+182,Oxford,Clergy,The Revd,Matthew,Beer
+183,Oxford,Clergy,The Revd Canon,Mark,Bennet
+184,Oxford,Clergy,The Revd Canon,Sue,Booys
+185,Oxford,Clergy,The Revd Dr,Chris,Dingwall-Jones
+186,Oxford,Clergy,The Revd Canon Dr,William,Lamb
+187,Oxford,Clergy,The Revd,Jeremy,Moodey
+188,Oxford,Clergy,The Revd Dr,Stephen,O'Connor
+189,Oxford,Clergy,The Revd Canon,Vaughan,Roberts
+190,Oxford,Clergy,The Ven,David,Tyler
+191,Peterborough,Clergy,The Revd,Andrew,Birks
+192,Peterborough,Clergy,The Ven,Alison,Booker
+193,Peterborough,Clergy,The Revd Canon,Oliver,Coss
+194,Portsmouth,Clergy,The Revd,Jennifer,Camirand
+195,Portsmouth,Clergy,The Revd,Paul,Chamberlain
+196,Portsmouth,Clergy,The Revd,Andrew,Hargreaves
+197,Rochester,Clergy,The Revd,Timothy,Edwards
+198,Rochester,Clergy,The Ven,Alison,Kerr
+199,Rochester,Clergy,The Revd,Trudi,Oliver
+200,St Albans,Clergy,The Revd Canon Dr,Timothy,Bull
+201,St Albans,Clergy,The Revd Canon,Lucy,Davis
+202,St Albans,Clergy,The Revd,Christopher,Kilgour
+203,St Albans,Clergy,The Revd Dr,Min-Min,Peaker
+204,St Albans,Clergy,The Revd,Rachel,Wakefield
+205,St Eds and Ipswich,Clergy,The Ven,Samantha,Brazier-Gibbs
+206,St Eds and Ipswich,Clergy,The Revd Fr,Benjamin,Edwards
+207,St Eds and Ipswich,Clergy,The Revd Canon,Christopher,Robinson
+208,Salisbury,Clergy,Canon,Philip,Bromiley
+209,Salisbury,Clergy,The Revd,Lesley,Jones
+210,Salisbury,Clergy,The Revd,Gerry,Lynch
+211,Salisbury,Clergy,The Revd,Charlie,Thomson
+212,Salisbury - Channel Islands,Clergy,The Ven,Matthew,Trick
+213,Sheffield,Clergy,The Revd Dr,Daniel,Brown
+214,Sheffield,Clergy,The Revd Canon Dr,Claire,Dawson
+215,Sheffield,Clergy,The Revd,Sarah,Maughan
+216,Sheffield,Clergy,The Revd Canon,Rick,Stordy
+217,Sodor and Man,Clergy,The Revd,Elizabeth,Hull
+218,Southwark,Clergy,The Revd,Aneal,Appadoo
+219,Southwark,Clergy,The Revd Dr,Charlie,Bączyk-Bell
+220,Southwark,Clergy,Fr,Antonio,Garcia Fuerte
+221,Southwark,Clergy,The Revd Canon Dr,Melanie,Harrington-Haynes
+222,Southwark,Clergy,Fr,Andrew,Mumby
+223,Southwark,Clergy,The Revd Canon,Anna,Norman-Walker
+224,Southwark,Clergy,The Ven,Gregory,Prior
+225,Southwark,Clergy,The Revd,Jago,Wynne
+226,Southwell & Nottingham,Clergy,The Revd,Becky,Hancock
+227,Southwell & Nottingham,Clergy,The Revd,Jo,Lees-Robinson
+228,Southwell & Nottingham,Clergy,The Revd Dr,Ian,Paul
+229,Truro,Clergy,The Ven,Clive,Hogger
+230,Truro,Clergy,The Revd,Anna,Hyde
+231,Truro,Clergy,The Revd,Andrew,Yates
+232,Winchester,Clergy,The Revd Dr,Timothy,Matthews
+233,Winchester,Clergy,The Revd,Rachel,Noel
+234,Winchester,Clergy,The Revd Dr,Jonathan,Rowe
+235,Winchester,Clergy,The Revd,Sarah,Yetman
+236,Worcester,Clergy,The Revd,Rebecca,Elliott
+237,Worcester,Clergy,The Revd,Adam,Hadley
+238,Worcester,Clergy,The Revd Canon,Claire,Lording
+239,York,Clergy,The Revd,Melanie,Burnside
+240,York,Clergy,The Revd,Brenda,Forrester
+241,York,Clergy,The Revd Canon,Adam,Gaunt
+242,York,Clergy,The Revd,David,Goodhew
+243,York,Clergy,The Ven,Liz,Hassall
+244,York,Clergy,The Revd,John,Hoyland
+245,Bath and Wells,Laity,,Christina,Baron
+246,Bath and Wells,Laity,Mr,James,Cary
+247,Bath and Wells,Laity,,Mike,Hodson
+248,Bath and Wells,Laity,Mrs,Helen,Horsey
+249,Bath and Wells,Laity,Mrs,Sarah,Packman
+250,Birmingham,Laity,Canon,Dawn,Braithwaite
+251,Birmingham,Laity,Dr,Rachel,Jepson
+252,Birmingham,Laity,Mr,Matthew,Vaughan
+253,Blackburn,Laity,Mr,Stephen,Boyall
+254,Blackburn,Laity,Miss,Margaret,Carr
+255,Blackburn,Laity,Canon,David,Gascoigne
+256,Blackburn,Laity,Mr,Paul,Hannah
+257,Blackburn,Laity,Mrs,Hannah,Lockwood
+258,Blackburn,Laity,Mrs,Rosemary,Lyon
+259,Blackburn,Laity,Mr,Paul,Ronson
+260,Bristol,Laity,Mrs,Helen,Aberdeen
+261,Bristol,Laity,Dr,Brendan,Biggs
+262,Bristol,Laity,Dr,Victoria,Omotoso
+263,Canterbury,Laity,Mrs,Judith,Andrews
+264,Canterbury,Laity,Mrs,Susan,Carey
+265,Canterbury,Laity,Mrs,Marian,Nicholson
+266,Carlisle,Laity,Mrs,Christine,Burgess
+267,Carlisle,Laity,Mrs,Julie,Burrows
+268,Carlisle,Laity,Mr,Jason,Dobb
+269,Carlisle,Laity,Mr,Andy,Walkingshaw
+270,Chelmsford,Laity,Mrs,Gill,Ball
+271,Chelmsford,Laity,Mr,Hin,Cheung
+272,Chelmsford,Laity,Mrs,Katia,D'Arcy-Cumber
+273,Chelmsford,Laity,Canon,Robert,Hammond
+274,Chelmsford,Laity,Mr,Evans,Ofoajoku
+275,Chelmsford,Laity,Mrs,Sandie,Turner
+276,Chester,Laity,Dr,Janette,Allotey
+277,Chester,Laity,Canon,Fiona,Bruce
+278,Chester,Laity,Dr,Alan,Dowen
+279,Chester,Laity,Mr,Jonathan,Masters
+280,Chester,Laity,Mrs,Winsome,Richbell-Brown
+281,Chester,Laity,Mr,Samuel,Wilson
+282,Chester,Laity,Miss,Deborah,Woods
+283,Chichester,Laity,Mr,Martin,Auton-Lloyd
+284,Chichester,Laity,Mrs,Lucy,Barr-Hamilton
+285,Chichester,Laity,Mr,Mark,Binney
+286,Chichester,Laity,Mr,Bob,Chambers
+287,Chichester,Laity,Dr,Simon,Eyre
+288,Chichester,Laity,Mrs,Gillian,Howarth
+289,Chichester,Laity,Mr,Bradley,Smith
+290,Coventry,Laity,Ms,Blessing,Alayande
+291,Coventry,Laity,Mr,Stephen,Elton
+292,Coventry,Laity,Mr,Sam,Margrave
+293,Derby,Laity,Mrs,Kat,Alldread
+294,Derby,Laity,Mrs,Rachel,Bond
+295,Derby,Laity,Mr,Peter,Kelsey
+296,Durham,Laity,Mrs,Hanna,Lucas
+297,Durham,Laity,Mrs,Helen,Smith
+298,Durham,Laity,Dr,Richard,Scothon
+299,Durham,Laity,Dr,Guy,Wingate
+300,Ely,Laity,Mrs,Rebecca,Cowburn
+301,Ely,Laity,Prof,Andrew,Gordon
+302,Ely,Laity,Mr,Christopher,Townsend
+303,Europe,Laity,Mr,Willy,Basengimana
+304,Europe,Laity,Mr,Lester,Carissimi
+305,Europe,Laity,Ms,Ruth,Leach
+306,Exeter,Laity,Mrs,Jill,Caporn
+307,Exeter,Laity,Mr,Simon,Friend
+308,Exeter,Laity,Dr,Kerry,Gilbert
+309,Exeter,Laity,Dr,Bijan,Omrani
+310,Exeter,Laity,Dr,Francis,Sansbury
+311,Gloucester,Laity,Mr,Henry,Cole
+312,Gloucester,Laity,Canon,Karen,Czapiewski
+313,Gloucester,Laity,Mr,Robert,McNeil-Wilson
+314,Gloucester,Laity,Mr,Nic,Tall
+315,Guildford,Laity,Mrs,Claire,Bateman
+316,Guildford,Laity,Mr,Stephen,Hofmeyr
+317,Guildford,Laity,Mr,Adrian,Vincent
+318,Guildford,Laity,Mrs,Judy,Young
+319,Hereford,Laity,Miss,Emily,Hill
+320,Hereford,Laity,Mr,Charles,Houston
+321,Hereford,Laity,Mrs,Lesley-Anne,Williams
+322,Leeds,Laity,Mrs,Jo,Beacroft-Mitchell
+323,Leeds,Laity,Mrs,Helen,Eskriett
+324,Leeds,Laity,Mr,Hugh,Lorimer
+325,Leeds,Laity,Sir,Richard,Mantle
+326,Leeds,Laity,Mr,Keith,Miller
+327,Leeds,Laity,Mrs,Judith,Osborne
+328,Leeds,Laity,Associate Prof,Leonard,Sanderman
+329,Leeds,Laity,Mrs,Catherine,Stephenson
+330,Leeds,Laity,Dr,Diana,Tremayne
+331,Leicester,Laity,Mr,Richard,Arens
+332,Leicester,Laity,Mr,Joel,Plant
+333,Leicester,Laity,Mrs,Anne,Scott
+334,Lichfield,Laity,Mr,Mark,Chapman
+335,Lichfield,Laity,Mr,Christopher,Gill
+336,Lichfield,Laity,Mrs,Wendy,Haynes
+337,Lichfield,Laity,Ms,Deborah,King
+338,Lichfield,Laity,Mr,Nnaeto,Onwuzurumba
+339,Lichfield,Laity,Mrs,Amanda,Robbie
+340,Lichfield,Laity,Mr,John,Wilson
+341,Lincoln,Laity,Canon,Nigel,Bacon
+342,Lincoln,Laity,Mr,Paul,Brewster
+343,Lincoln,Laity,Mr,Sebastian,Brown
+344,Lincoln,Laity,Dr,Neill,Hepburn
+345,Liverpool,Laity,Mr,Warren,Bohan
+346,Liverpool,Laity,Mrs,Nadine,Daniel
+347,Liverpool,Laity,Mr,Richard,Denno
+348,Liverpool,Laity,Mrs,Jessica,Howard
+349,London,Laity,Mr,Philip,Baldwin
+350,London,Laity,Miss,Debbie,Buggs
+351,London,Laity,Mr,David,Durlacher
+352,London,Laity,Mr,Timothy,Foot
+353,London,Laity,Mr,Aiden,Hargreaves-Smith
+354,London,Laity,Mrs,Sophie,Ladd
+355,London,Laity,Ms,Fiona,MacMillan
+356,London,Laity,Miss,Mary,Moore
+357,London,Laity,Ms,Josile,Munro
+358,London,Laity,Mr,Matt,Orr
+359,London,Laity,Mr,Clive,Scowen
+360,London,Laity,Ms,Heather,Taylor
+361,London,Laity,Mrs,Sarah,Tett
+362,Manchester,Laity,Mr,Philip,Bilson
+363,Manchester,Laity,Mr,Rob,Chilton
+364,Manchester,Laity,,Deborah,Ewing-Chow
+365,Manchester,Laity,Mrs,Abigail,Ogier
+366,Manchester,Laity,Mr,James,Wilson
+367,Newcastle,Laity,Mrs,Nicola,Denyer
+368,Newcastle,Laity,Mr,Josh,Jee
+369,Newcastle,Laity,Canon,Izzy,McDonald-Booth
+370,Norwich,Laity,Mr,John,Brydon
+371,Norwich,Laity,Mrs,Helen,Grogutt
+372,Norwich,Laity,Mr,David,Ryczanowski
+373,Oxford,Laity,Mr,Peter,Barrett
+374,Oxford,Laity,Dr,Andrew,Bell
+375,Oxford,Laity,Dr,Gracy,Crane
+376,Oxford,Laity,Miss,Prudence,Dailey
+377,Oxford,Laity,Canon,Julie,Dziegiel
+378,Oxford,Laity,Prof Emerita,Helen,King
+379,Oxford,Laity,Mrs,Helen,Lamb
+380,Oxford,Laity,Mrs,Helen,Savage
+381,Oxford,Laity,Miss,Alexandra,Scott
+382,Peterborough,Laity,Mrs,Vicky,Brett
+383,Peterborough,Laity,Mr,Andrew,Presland
+384,Peterborough,Laity,Mrs,Marie-Louise,Singodia
+385,Portsmouth,Laity,Mr,Noah,Chamberlain
+386,Portsmouth,Laity,Dr,Ian,Johnston
+387,Portsmouth,Laity,Miss,Vanda,Leary
+388,Rochester,Laity,Mrs,Fiona,Everett
+389,Rochester,Laity,Mrs,Billy-Jo,O'Leary
+390,Rochester,Laity,Ms,Jane,Rosam
+391,Rochester,Laity,Mr,Andrew,Smith
+392,St Albans,Laity,Canon,Peter,Adams
+393,St Albans,Laity,Mrs,Sheila,Bissell
+394,St Albans,Laity,Dr,Hannah,Kinsey
+395,St Albans,Laity,Ms,Rebecca,Mynett
+396,St Albans,Laity,Mrs,Emma,Robarts
+397,St Eds and Ipswich,Laity,Mrs,Helen,Clarkson-Fieldsend
+398,St Eds and Ipswich,Laity,Mr,Neil,Logan-Green
+399,St Eds and Ipswich,Laity,Dr,Thomas,Simmons
+400,Salisbury,Laity,Mr,Jonathan,Baird
+401,Salisbury,Laity,Mr,Andrew,Farley
+402,Salisbury,Laity,Mr,Oliver,Ilife
+403,Salisbury,Laity,Mrs,Jane,Krammer
+404,Salisbury,Laity,Mrs,Fiona,Norris
+405,Salisbury,Laity,Mr,Jason,Wyles
+406,Salisbury - Channel Islands,Laity,Mrs,Ruth,Abernethy
+407,Salisbury - Channel Islands,Laity,Mr,Paul,Matthams
+408,Sheffield,Laity,Mrs,Christine,Batchford
+409,Sheffield,Laity,Mrs,Anna,De Castro
+410,Sheffield,Laity,Miss,Jane,Patterson
+411,Sheffield,Laity,Canon Dr,Cathy,Rhodes
+412,Sodor and Man,Laity,Mrs,Susan,Kennaugh
+413,Southwark,Laity,Mr,Piotr,Bączyk-Bell
+414,Southwark,Laity,Ms,Cheryl,Bartels
+415,Southwark,Laity,Mrs,Rebecca,Chapman
+416,Southwark,Laity,Mrs,Katie,Colahan
+417,Southwark,Laity,Mr,Adrian,Greenwood
+418,Southwark,Laity,Mr,Paul,Waddell
+419,Southwark,Laity,Mr,Grahame,Woods
+420,Southwell & Nottingham,Laity,Mr,Ian,Boothroyd
+421,Southwell & Nottingham,Laity,Prof,Peter,Harris
+422,Southwell & Nottingham,Laity,Mrs,Laura,Taylor
+423,Southwell & Nottingham,Laity,Dr,Stephanie,Whitehead
+424,Truro,Laity,Mrs,Diana,Favell
+425,Truro,Laity,Mr,Pekki,Purpurra
+426,Truro,Laity,Mr,Simon,Taurins
+427,Winchester,Laity,Mr,Stephen,Bushell
+428,Winchester,Laity,Dr,Simon,Clift
+429,Winchester,Laity,Canon,Alison,Coulter
+430,Winchester,Laity,Dr,Julie,Maxwell
+431,Worcester,Laity,Miss,Hannah,Barlow
+432,Worcester,Laity,Mr,Elliot,Grainger
+433,Worcester,Laity,Prof,Lynn,Nichol
+434,York,Laity,Miss,Heather,Baker
+435,York,Laity,Dr,Neill,Burgess
+436,York,Laity,Mr,Gerald,Fox
+437,York,Laity,Mrs,Aisling,Griffin
+438,York,Laity,Dr,Nick,Land
+439,York,Laity,Ms,Sammi,Tooze
+440,Armed Forces,Clergy,The Ven,Ralph,Barber
+441,Armed Forces,Clergy,The Ven,Stephen,Dunwoody
+442,Armed Forces,Clergy,The Ven AVM,Giles,Legood
+443,Armed Forces,Laity,Cdr,Adam,Kendry
+444,Armed Forces,Laity,Fg Off,Victoria,McCarthy
+445,Armed Forces,Laity,Maj,Richard,Speaight
+446,Religious Communities,Clergy,The Revd Sr,Beverley,CSF
+447,Religious Communities,Clergy,The Revd Fr,Thomas,Seville CR
+448,Religious Communities,Laity,Br,Adrian,OSB
+449,Religious Communities,Laity,Sr,Helen,OHP
+450,Universities and TEIs,Clergy,The Revd Dr,Helen,Dawes
+451,Universities and TEIs,Clergy,The Revd Dr,Sean,Doherty
+452,Universities and TEIs,Clergy,The Revd Dr,Steffan,Mathias
+453,Universities and TEIs,Clergy,The Revd Dr,Mark,Smith
+454,Ex Officio,Laity,The Rt Worshipful,Morag,Ellis
+455,Ex Officio,Laity,The Rt Worshipful,Timothy,Briden
+456,Ex Officio,Laity,The Rt Worshipful,Gregory,Jones KC
+457,Ex Officio,Laity,Mr,Alan,Smith
+458,Ex Officio,Laity,Ms,Marsha,de Cordova
+459,Ex Officio,Laity,Sir,Robert,Buckland
+460,Ex Officio,Laity,Mr,Clive,Mather
+461,Ex Officio,Clergy,The Ven,James,Ridge
+462,Ex Officio,Laity,Dame,Caroline,Spelman
+463,Archbishops' Council,Laity,Mr,Peter,Doyle
+464,Archbishops' Council,Laity,Mr,Mark,Sheard
+465,Archbishops' Council,Laity,Mrs,Julie,Jones
+466,Archbishops' Council,Clergy,The Revd,Richard,Springer
+467,Archbishops' Council,Laity,Mr,Carl,Hughes
+468,Archbishops' Council,Laity,Mr,Joseph,Diwakar
+469,Deaf Anglicans,Non-voting,Ms,Ana,
+470,Deaf Anglicans,Non-voting,Miss,Vicky,Mackeprang
+471,Deaf Anglicans,Non-voting,Ms,Sarah,Tupling
+472,Ecumenical Representatives,Non-voting,The Revd,Mike,Royal
+473,Ecumenical Representatives,Non-voting,HE,Archbishop,Angaelos
+474,Ecumenical Representatives,Non-voting,,,
+475,Ecumenical Representatives,Non-voting,The Revd,VACANT,VACANT
+476,Ecumenical Representatives,Non-voting,The Revd,,
+477,Ecumenical Representatives,Non-voting,The Revd,Steve,Faber
+478,Ecumenical Representatives,Non-voting,Archpriest,Stephen,Platt
+479,Ecumenical Representatives,Non-voting,Fr,Marc,Homsey
+480,Ecumenical Representatives,Non-voting,The Revd,Andy,Fyall
+481,Ecumenical Representatives,Non-voting,Mrs,Shermara,Fletcher-Hoyte
+482,Ecumenical Representatives,Non-voting,The Revd Fr,Stephen,Maxwell
+483,Young Adult,Non-voting,Miss,Eleanor,Motion
+484,Young Adult,Non-voting,Mr,William,Leeming
+485,Young Adult,Non-voting,Mr,Philip,Collins White
+486,Young Adult,Non-voting,Mr,Robert,Hindle
+487,Young Adult,Non-voting,,,

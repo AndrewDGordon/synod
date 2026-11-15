@@ -1,5 +1,75 @@
 # Synod
 
-I am a member of the General Synod for 2016-2031.
+I am a member of the General Synod for 2026-2031.
 
 This is a public repo for public data about the General Synod.
+
+## Contents
+
+- [november-2026-papers.md](november-2026-papers.md): index of the papers for the November 2026 group of sessions.
+- [synod-members-resources.md](synod-members-resources.md): index of the members' resources pages.
+- [members.md](members.md): every member of the 2026-2031 Synod in the order of the Church of England's list, with a link to each elected member's election statement where one has been published, and a note where none exists.
+- [download_statements.py](download_statements.py): fetches every linked statement into `statements/`. Needs Python 3 and `requests`.
+- [data/members.csv](data/members.csv): the 487 members by GS number, constituency, house and name, parsed from the Church of England's October 2026 list.
+- [data/dioceses.csv](data/dioceses.csv): the 42 dioceses and their websites.
+- [data/sources.csv](data/sources.csv): web pages found by the crawler that may carry election statements, with scores.
+- [data/sources-peterowen.csv](data/sources-peterowen.csv): Peter Owen's per-constituency links to address and results pages (http://peterowen.org.uk/articles/gselection2026.html), a good first stop.
+- [data/sources-manual.csv](data/sources-manual.csv): pages found by hand or by web search.
+- [data/statement-urls.csv](data/statement-urls.csv): statement files found by hand on pages the crawler could not read.
+- [data/compiled.csv](data/compiled.csv): documents that hold several members' statements in one file (Chester publishes one per house; the Church of England publishes one per special constituency and province); `kind=answers` marks a collection of candidates' answers to electors' questions, used where no addresses are online (St Albans).
+- [data/aliases.csv](data/aliases.csv): spellings of surnames used on diocesan pages that differ from the national list.
+- [data/notes.csv](data/notes.csv): why a member has no statement, by GS number.
+- [data/statements.csv](data/statements.csv): one row per elected member, with the URL, local path and SHA-256 of the statement found for them, if any.
+- [data/coverage.md](data/coverage.md): statements found per diocese.
+- `statements/` (not in the repo, see below): the downloaded election statements, one folder per diocese or constituency, files named `<GS number>-<surname>-<first name>`.
+- [agent/](agent/): the search agent (see below).
+
+## The election-statement search agent
+
+Dioceses publish the election addresses of candidates for General Synod on their own
+websites, in no standard place or format. The agent finds them in two stages and a
+fallback:
+
+1. `agent/find_pages.py` visits each diocesan site, reads its sitemap if there is one,
+   follows navigation links that mention synod, elections or governance two levels deep,
+   and scores every page by how many elected members' surnames it names, by keywords such
+   as "election address", and by how many PDFs it links. It writes `data/sources.csv`.
+2. `agent/harvest.py` opens the best-scoring pages, matches each link to a member by
+   surname in the link text or filename, downloads PDFs and Word files, follows HTML
+   links one level to find a document or save the page, and writes `data/statements.csv`
+   and `data/coverage.md`.
+3. The Claude Code skill `/find-statements` fills the gaps with web search and page
+   fetching, records confirmed pages in `data/sources-manual.csv` and hand-found files in
+   `data/statement-urls.csv`, and re-runs the harvest. A file fetched by other means is
+   added with `agent/import_file.py <gs_number> <path> <url>`.
+
+Rerun both scripts to refresh, then `agent/make_members_page.py` to regenerate
+[members.md](members.md). Pass diocese names to limit a run to those dioceses.
+Requires Python 3 with `requests`, `beautifulsoup4` and `lxml`, and `pdftotext` (poppler).
+
+### The statements themselves
+
+The election addresses belong to their authors and publishers, so the repo holds only
+their URLs, not the files. `statements/` is in `.gitignore`. To build a local copy run
+
+    python3 download_statements.py
+
+which fetches the 372 documents behind the 395 statements, skips any already present with
+the recorded checksum, and ends by listing the URLs that refused a scripted download so you
+can save those in a browser (`--only Ely Deans` limits a run; `--dry-run` only lists).
+
+### State on 15 November 2026
+
+The database tracks the 410 elected members: 381 clergy and laity elected by the dioceses
+and 29 elected in the special constituencies (suffragan bishops, deans, universities and
+TEIs, Armed Forces, religious communities). Statements were found for 395 of them (see
+[data/coverage.md](data/coverage.md)). The 15 without one, each explained in
+[data/notes.csv](data/notes.csv), are the three Channel Islands members (seats filled by
+the Jersey and Guernsey deaneries without a contest), the Bishop of Dover (ex officio, not
+one of the nine elected suffragans), the six Armed Forces members and four religious
+communities members (returned without a count; nothing published), and the Dean of Ripon
+(the national PDF records "No election address supplied"). The 77 bishops, ex officio,
+appointed, co-opted and ecumenical members in the national list were never elected and
+have no statements. St Albans also publishes two "Responses to Questions submitted to
+Candidates" PDFs (`kind=answers` in compiled.csv), which the harvester uses only for
+members without an address.

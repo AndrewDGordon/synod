@@ -1,0 +1,19 @@
+diocese,url,note
+St Albans,https://www.stalbansdiocese.org/about-us/governance/synods-boards-and-committees/elections-to-general-synod-2026/,found by web search
+Truro,https://trurodiocese.org.uk/resources/policy-governance/general-synod/gsreps/,found by web search and crawl of the General Synod section
+Worcester,https://cofe-worcester.org.uk/about-us/leadership-and-governance/general-synod/,site returns 403 to scripts; read with WebFetch
+York,https://dioceseofyork.org.uk/our-diocese/governance/general-synod/,site returns 403 to scripted PDF downloads; read with WebFetch
+Exeter,https://exeter.anglican.org/who-we-are/synod/general-synod/,General Synod page links each elected member's address
+Bath and Wells,https://bathandwells.org.uk/who-we-are/general-synod/general-synod-elections/,page read via page fetcher
+Hereford,https://hereford.anglican.org/general-synod,page read via page fetcher
+Oxford,https://www.oxford.anglican.org/who-we-are/how-we-are-governed/general-synod/,page read via page fetcher; lists all candidates with addresses
+Manchester,https://www.manchester.anglican.org/our-diocese/about-us/governance/general-synod/,page read via page fetcher; 13 addresses linked
+Lichfield,https://lichfield.anglican.org/about-us/synod/general-synod-elections-2026.php,results page links each elected member's address
+Europe,https://www.europe.anglican.org/resources/house-clergy-candidates-and-election-addresses,clergy candidates with addresses
+Europe,https://www.europe.anglican.org/resources/house-laity-candidates-and-election-addresses,lay candidates with addresses
+Durham,https://durhamdiocese.org/about-us/governance/general-synod/general-synod-elections/,page read via page fetcher; 8 addresses linked
+Peterborough,https://peterborough-diocese.org.uk/about-us/governance/elections-for-new-general-synod-members-in-2026/,page read via page fetcher; 6 addresses linked
+Salisbury,https://salisbury.anglican.org/who-we-are/governance/general-synod-elections-2026/,page read via page fetcher; 10 addresses linked; Channel Islands members have none
+Sheffield,https://www.sheffield.anglican.org/general-synod-election-results/,news post with the results and all eight addresses; found via the site's own search (?s=general+synod+election)
+Southwell & Nottingham,https://southwell.anglican.org/gs-elections-2026-election-addresses-and-other-electoral-material/,media attachment page; the addresses are uploaded to the site but not linked from the election page
+Derby,https://derby.anglican.org/en/synod-2026-candidates.html,candidates page with the 20 election addresses as Joomla download links; found by web search, not linked from the General Synod page
