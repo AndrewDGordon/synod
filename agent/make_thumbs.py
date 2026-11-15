@@ -5,7 +5,9 @@ Writes docs/thumbs/<gs>-<page>.webp at 160 px wide (the strip in the table) and
 docs/thumbs/m/<gs>-<page>.webp at 240 px (the hover card), plus docs/thumbs/index.csv listing
 gs_number, page, width, height, source sha256. Pages are rendered at 40 dpi, so the text is not
 legible: the thumbnails show the shape of a statement and link to the publisher's copy. For a
-member inside a compiled file only their own pages are rendered. Word files are converted with
+member inside a compiled file only their own pages are rendered. Blank pages (fewer than one pixel
+in a thousand darker than light grey, as at the end of a two-page address saved as three) are
+dropped. Word files are converted with
 LibreOffice when it is installed and skipped otherwise. Needs the local statements/ folder
 (download_statements.py rebuilds it), pdftoppm (poppler) and Pillow."""
 import csv, hashlib, io, re, shutil, subprocess, sys, tempfile
@@ -17,6 +19,13 @@ DATA = ROOT / "data"
 OUT = ROOT / "docs" / "thumbs"
 SMALL, MEDIUM = 160, 240
 MAX_PAGES = 4
+BLANK = 0.001  # fraction of dark pixels below which a page counts as blank
+
+
+def blank(im):
+    g = im.convert("L")
+    dark = sum(1 for v in g.getdata() if v < 200)
+    return dark < BLANK * g.width * g.height
 
 
 def render(pdf, first, last):
@@ -50,7 +59,7 @@ def main():
     index_path = OUT / "index.csv"
     done = {(r["gs_number"], r["page"]): r for r in csv.DictReader(open(index_path))} if index_path.exists() and not force else {}
     rows = []
-    rendered = skipped = missing = 0
+    rendered = skipped = missing = blanks = 0
     for r in csv.DictReader(open(DATA / "statements.csv", newline="", encoding="utf-8")):
         if r["status"] not in ("downloaded", "compiled") or not r["file"]: continue
         src = ROOT / r["file"]
@@ -70,6 +79,10 @@ def main():
             if not pdf: print(f"skip {src.name}: no LibreOffice to convert it"); continue
         try: pages = render(pdf, first, last)
         except Exception as e: print(f"fail {src.name}: {e}"); continue
+        kept = [im for im in pages if not blank(im)]
+        blanks += len(pages) - len(kept); pages = kept
+        for stale in OUT.glob(f"{r['gs_number']}-*.webp"): stale.unlink()
+        for stale in (OUT / "m").glob(f"{r['gs_number']}-*.webp"): stale.unlink()
         for i, im in enumerate(pages, 1):
             w, hgt = save(im, SMALL, OUT / f"{r['gs_number']}-{i}.webp")
             save(im, MEDIUM, OUT / "m" / f"{r['gs_number']}-{i}.webp")
@@ -79,7 +92,7 @@ def main():
     with open(index_path, "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=["gs_number", "page", "width", "height", "sha256"]); w.writeheader(); w.writerows(rows)
     total = sum(p.stat().st_size for p in OUT.rglob("*.webp"))
-    print(f"rendered {rendered} statements, unchanged {skipped}, source files missing {missing}; {len(rows)} pages, {total/1e6:.1f} MB in docs/thumbs")
+    print(f"rendered {rendered} statements, unchanged {skipped}, source files missing {missing}, blank pages dropped {blanks}; {len(rows)} pages, {total/1e6:.1f} MB in docs/thumbs")
 
 
 if __name__ == "__main__":
