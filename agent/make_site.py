@@ -58,6 +58,9 @@ def main():
     extras = {r["gs_number"]: r for r in read("wikipedia-images.csv")}
     images = {k: v for k, v in extras.items() if v["thumb_url"]}
     const_wp = {r["constituency"]: r for r in read("constituency-wikipedia.csv")}  # dioceses, other constituencies, house:<House>
+    thumbs = {}
+    for r in read("../docs/thumbs/index.csv") if (ROOT / "docs" / "thumbs" / "index.csv").exists() else []:
+        thumbs.setdefault(r["gs_number"], []).append(r)
     held = sum(1 for r in statements.values() if r["status"] in ("downloaded", "compiled", "answers"))
     constituencies = sorted({m["constituency"] for m in members})
     today = datetime.date.today().strftime("%-d %B %Y")
@@ -78,6 +81,12 @@ def main():
         else:
             photo = f'<span class="ph" aria-hidden="true">{h(initials(m))}</span>'
         st, label = statement_links(r)
+        if r and thumbs.get(gs):
+            pages = thumbs[gs]
+            imgs = "".join(f'<img loading="lazy" src="thumbs/{gs}-{t["page"]}.webp" width="{int(int(t["width"]) * 50 / int(t["height"]))}" height="50" '
+                           f'alt="Page {t["page"]} of the statement of {name}">' for t in pages)
+            st = (f'<a class="thumbs" href="{h(r["statement_url"])}" data-pages="{",".join(f"{gs}-{t[chr(112)+chr(97)+chr(103)+chr(101)]}" for t in pages)}" '
+                  f'data-title="{name}" aria-label="{label}, {len(pages)} page{"s" if len(pages) > 1 else ""}">{imgs}</a> ' + st)
         note = note_text(r)
         elected = "yes" if r else "no"
         has = "yes" if r and r["status"] in ("downloaded", "compiled", "answers") else "no"
@@ -136,6 +145,12 @@ a.wp::after {{ content:" W"; font:600 .7rem system-ui, sans-serif; color:var(--m
 a.doc {{ display:inline-block; background:var(--chip); color:var(--accent2); border-radius:6px; padding:1px 8px; font-family:system-ui, sans-serif; font-size:.85rem; white-space:nowrap; }}
 a.src {{ font-family:system-ui, sans-serif; font-size:.8rem; color:var(--muted); margin-left:4px; }}
 td.note {{ color:var(--muted); font-size:.85rem; max-width:34ch; }}
+td.st {{ white-space:nowrap; }}
+a.thumbs {{ display:inline-flex; gap:3px; vertical-align:middle; margin-right:8px; }}
+a.thumbs img {{ height:50px; width:auto; border:1px solid var(--line); border-radius:2px; background:#fff; box-shadow:0 1px 2px rgba(0,0,0,.12); }}
+#card.pages {{ width:auto; max-width:min(560px, calc(100vw - 32px)); }}
+#card .strip {{ display:flex; gap:8px; margin:6px 0 8px; }}
+#card .strip img {{ float:none; width:auto; height:auto; max-width:240px; max-height:340px; margin:0; border:1px solid var(--line); border-radius:3px; background:#fff; }}
 tbody tr.hide {{ display:none; }}
 footer {{ margin:40px auto 60px; color:var(--muted); font-size:.9rem; }}
 footer details {{ margin-top:12px; }}
@@ -154,13 +169,14 @@ a.cwp {{ color:inherit; border-bottom:1px dotted var(--muted); }}
 <body>
 <header>
 <h1>General Synod 2026–2031<small>Members of the Church of England's General Synod, their election statements, and their Wikipedia articles</small></h1>
-<p class="lede">Names, GS numbers, constituencies and houses follow the Church of England's <a href="{SOURCE_PDF}">list of members</a> (October 2026). Where a diocese or the Church of England has published a candidate's election address, the statement link leads to the publisher's own copy. A linked name opens the member's Wikipedia article, and resting on it shows the article's opening lines. Constituency and House names link to their articles in the same way. Photographs come from Wikipedia and are credited below.</p>
+<p class="lede">Names, GS numbers, constituencies and houses follow the Church of England's <a href="{SOURCE_PDF}">list of members</a> (October 2026). Where a diocese or the Church of England has published a candidate's election address, the statement link leads to the publisher's own copy. A linked name opens the member's Wikipedia article, and resting on it shows the article's opening lines. Constituency and House names link to their articles in the same way. Photographs come from Wikipedia and are credited below. The small page images beside each statement show its shape, not its text; rest on them for a closer look, and click to open the publisher's PDF.</p>
 <div class="stats">
 <div><b>{len(members)}</b><span>members</span></div>
 <div><b>{len(statements)}</b><span>elected members</span></div>
 <div><b>{held}</b><span>statements linked</span></div>
 <div><b>{len(wiki)}</b><span>Wikipedia articles</span></div>
 <div><b>{len(images)}</b><span>photographs</span></div>
+<div><b>{sum(len(v) for v in thumbs.values())}</b><span>statement pages</span></div>
 </div>
 </header>
 <main>
@@ -194,7 +210,13 @@ a.cwp {{ color:inherit; border-bottom:1px dotted var(--muted); }}
   function show(a){{
     clearTimeout(hideTimer); current=a;
     const t=a.dataset.title, ab=a.dataset.abstract, th=a.dataset.thumb;
-    card.innerHTML=(th?'<img src="'+th+'" alt="">':'')+'<b>'+t+'</b><p>'+(ab||'No summary available.')+'</p><a href="'+a.href+'">Read on Wikipedia →</a>';
+    if(a.dataset.pages){{
+      card.classList.add('pages');
+      card.innerHTML='<b>'+t+'</b><div class="strip">'+a.dataset.pages.split(',').map(p=>'<img src="thumbs/m/'+p+'.webp" alt="">').join('')+'</div><a href="'+a.href+'">Open the statement (PDF) →</a>';
+    }} else {{
+      card.classList.remove('pages');
+      card.innerHTML=(th?'<img src="'+th+'" alt="">':'')+'<b>'+t+'</b><p>'+(ab||'No summary available.')+'</p><a href="'+a.href+'">Read on Wikipedia →</a>';
+    }}
     card.classList.add('show');
     const r=a.getBoundingClientRect(), cw=card.offsetWidth, ch=card.offsetHeight;
     let x=r.left+window.scrollX, y=r.bottom+window.scrollY+8;
@@ -203,7 +225,7 @@ a.cwp {{ color:inherit; border-bottom:1px dotted var(--muted); }}
     card.style.left=x+'px'; card.style.top=y+'px';
   }}
   function hide(){{ hideTimer=setTimeout(()=>{{card.classList.remove('show'); current=null;}},180); }}
-  document.querySelectorAll('a[data-abstract]').forEach(a=>{{
+  document.querySelectorAll('a[data-abstract], a[data-pages]').forEach(a=>{{
     a.addEventListener('mouseenter',()=>show(a)); a.addEventListener('mouseleave',hide);
     a.addEventListener('focus',()=>show(a)); a.addEventListener('blur',hide);
   }});
@@ -237,7 +259,7 @@ a.cwp {{ color:inherit; border-bottom:1px dotted var(--muted); }}
 """
     (ROOT / "docs").mkdir(exist_ok=True)
     (ROOT / "docs" / "index.html").write_text(page, encoding="utf-8")
-    print(f"wrote docs/index.html: {len(members)} members, {held} statements, {len(wiki)} articles, {len(images)} photos")
+    print(f"wrote docs/index.html: {len(members)} members, {held} statements, {len(wiki)} articles, {len(images)} photos, {sum(len(v) for v in thumbs.values())} thumbnail pages")
 
 
 if __name__ == "__main__":
