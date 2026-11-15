@@ -1,43 +1,43 @@
-diocese,domain,home,notes
-Bath and Wells,bathandwells.org.uk,https://bathandwells.org.uk/,
-Birmingham,cofebirmingham.com,https://cofebirmingham.com/,
-Blackburn,blackburn.anglican.org,https://blackburn.anglican.org/,
-Bristol,bristol.anglican.org,https://bristol.anglican.org/,
-Canterbury,canterburydiocese.org,https://canterburydiocese.org/,
-Carlisle,carlislediocese.org.uk,https://www.carlislediocese.org.uk/,
-Chelmsford,chelmsford.anglican.org,https://www.chelmsford.anglican.org/,
-Chester,chesterdiocese.org,https://www.chesterdiocese.org/,chester.anglican.org redirects here
-Chichester,chichester.anglican.org,https://www.chichester.anglican.org/,
-Coventry,coventry.anglican.org,https://coventry.anglican.org/,
-Derby,derby.anglican.org,https://derby.anglican.org/en/,General Synod page links only results forms; the 20 candidates' addresses are Joomla download links on /en/synod-2026-candidates.html (found by web search); site is open to scripts
-Durham,durhamdiocese.org,https://durhamdiocese.org/,
-Ely,elydiocese.org,https://www.elydiocese.org/,
-Europe,europe.anglican.org,https://www.europe.anglican.org/,
-Exeter,exeter.anglican.org,https://exeter.anglican.org/,
-Gloucester,gloucester.anglican.org,https://gloucester.anglican.org/,
-Guildford,cofeguildford.org.uk,https://cofeguildford.org.uk/,
-Hereford,hereford.anglican.org,https://hereford.anglican.org/,
-Leeds,leeds.anglican.org,https://leeds.anglican.org/,
-Leicester,leicester.anglican.org,https://leicester.anglican.org/,
-Lichfield,lichfield.anglican.org,https://lichfield.anglican.org/,
-Lincoln,lincoln.anglican.org,https://www.lincoln.anglican.org/,
-Liverpool,liverpoolcofe.org,https://liverpoolcofe.org/,liverpool.anglican.org redirects here
-London,london.anglican.org,https://www.london.anglican.org/,
-Manchester,manchester.anglican.org,https://www.manchester.anglican.org/,
-Newcastle,newcastle.anglican.org,https://newcastle.anglican.org/,
-Norwich,dioceseofnorwich.org,https://www.dioceseofnorwich.org/,
-Oxford,oxford.anglican.org,https://oxford.anglican.org/,
-Peterborough,peterborough-diocese.org.uk,https://peterborough-diocese.org.uk/,
-Portsmouth,portsmouth.anglican.org,https://www.portsmouth.anglican.org/,
-Rochester,rochester.anglican.org,https://rochester.anglican.org/,
-St Albans,stalbansdiocese.org,https://www.stalbansdiocese.org/,stalbans.anglican.org redirects here; addresses are WordPress resource pages (/resource/<name>-general-synod-election-address/) shown on the General Synod page through a Document Library Pro dataview that scripts cannot read; the wp-json/wp/v2/search endpoint lists them all; the elections page also carries 'Responses to Questions submitted to Candidates' PDFs (compiled.csv kind=answers)
-St Eds and Ipswich,cofesuffolk.org,https://cofesuffolk.org/,
-Salisbury,salisbury.anglican.org,https://salisbury.anglican.org/,members list also has a Salisbury - Channel Islands constituency; site returns 403 to scripts; elections page links 10 addresses. The Channel Islands seats are filled separately (lay seat per deanery synod, clergy seat by the deans) and were returned without a count; neither deanery site (jerseydeanery.je, churchofengland.org.gg), Salisbury's media library nor Peter Owen's tracker has any address for Trick, Abernethy or Matthams (15 Nov 2026)
-Sheffield,sheffield.anglican.org,https://sheffield.anglican.org/,returns 403 to scripts (pages, PDFs and wp-json); the General Synod page lists members only, but the news post general-synod-election-results links all eight addresses; found through the site's own search page ?s=general+synod+election
-Sodor and Man,sodorandman.im,https://www.sodorandman.im/,
-Southwark,southwark.anglican.org,https://southwark.anglican.org/,
-Southwell & Nottingham,southwell.anglican.org,https://southwell.anglican.org/,election page links only the signed returns of result, but the addresses are uploaded to the site and listed by wp-json/wp/v2/media?search=election address
-Truro,trurodiocese.org.uk,https://trurodiocese.org.uk/,
-Winchester,winchesterdiocese.org,https://winchesterdiocese.org/,winchester.anglican.org redirects here
-Worcester,cofe-worcester.org.uk,https://cofe-worcester.org.uk/,
-York,dioceseofyork.org.uk,https://dioceseofyork.org.uk/,
+diocese,domain,home,notes,wikipedia
+Bath and Wells,bathandwells.org.uk,https://bathandwells.org.uk/,,https://en.wikipedia.org/wiki/Diocese_of_Bath_and_Wells
+Birmingham,cofebirmingham.com,https://cofebirmingham.com/,,https://en.wikipedia.org/wiki/Diocese_of_Birmingham
+Blackburn,blackburn.anglican.org,https://blackburn.anglican.org/,,https://en.wikipedia.org/wiki/Diocese_of_Blackburn
+Bristol,bristol.anglican.org,https://bristol.anglican.org/,,https://en.wikipedia.org/wiki/Diocese_of_Bristol
+Canterbury,canterburydiocese.org,https://canterburydiocese.org/,,https://en.wikipedia.org/wiki/Diocese_of_Canterbury
+Carlisle,carlislediocese.org.uk,https://www.carlislediocese.org.uk/,,https://en.wikipedia.org/wiki/Diocese_of_Carlisle
+Chelmsford,chelmsford.anglican.org,https://www.chelmsford.anglican.org/,,https://en.wikipedia.org/wiki/Diocese_of_Chelmsford
+Chester,chesterdiocese.org,https://www.chesterdiocese.org/,chester.anglican.org redirects here,https://en.wikipedia.org/wiki/Diocese_of_Chester
+Chichester,chichester.anglican.org,https://www.chichester.anglican.org/,,https://en.wikipedia.org/wiki/Diocese_of_Chichester
+Coventry,coventry.anglican.org,https://coventry.anglican.org/,,https://en.wikipedia.org/wiki/Diocese_of_Coventry
+Derby,derby.anglican.org,https://derby.anglican.org/en/,General Synod page links only results forms; the 20 candidates' addresses are Joomla download links on /en/synod-2026-candidates.html (found by web search); site is open to scripts,https://en.wikipedia.org/wiki/Diocese_of_Derby
+Durham,durhamdiocese.org,https://durhamdiocese.org/,,https://en.wikipedia.org/wiki/Diocese_of_Durham
+Ely,elydiocese.org,https://www.elydiocese.org/,,https://en.wikipedia.org/wiki/Diocese_of_Ely
+Europe,europe.anglican.org,https://www.europe.anglican.org/,,https://en.wikipedia.org/wiki/Diocese_in_Europe
+Exeter,exeter.anglican.org,https://exeter.anglican.org/,,https://en.wikipedia.org/wiki/Diocese_of_Exeter
+Gloucester,gloucester.anglican.org,https://gloucester.anglican.org/,,https://en.wikipedia.org/wiki/Diocese_of_Gloucester
+Guildford,cofeguildford.org.uk,https://cofeguildford.org.uk/,,https://en.wikipedia.org/wiki/Diocese_of_Guildford
+Hereford,hereford.anglican.org,https://hereford.anglican.org/,,https://en.wikipedia.org/wiki/Diocese_of_Hereford
+Leeds,leeds.anglican.org,https://leeds.anglican.org/,,https://en.wikipedia.org/wiki/Diocese_of_Leeds
+Leicester,leicester.anglican.org,https://leicester.anglican.org/,,https://en.wikipedia.org/wiki/Diocese_of_Leicester
+Lichfield,lichfield.anglican.org,https://lichfield.anglican.org/,,https://en.wikipedia.org/wiki/Diocese_of_Lichfield
+Lincoln,lincoln.anglican.org,https://www.lincoln.anglican.org/,,https://en.wikipedia.org/wiki/Diocese_of_Lincoln
+Liverpool,liverpoolcofe.org,https://liverpoolcofe.org/,liverpool.anglican.org redirects here,https://en.wikipedia.org/wiki/Diocese_of_Liverpool
+London,london.anglican.org,https://www.london.anglican.org/,,https://en.wikipedia.org/wiki/Diocese_of_London
+Manchester,manchester.anglican.org,https://www.manchester.anglican.org/,,https://en.wikipedia.org/wiki/Diocese_of_Manchester
+Newcastle,newcastle.anglican.org,https://newcastle.anglican.org/,,https://en.wikipedia.org/wiki/Diocese_of_Newcastle
+Norwich,dioceseofnorwich.org,https://www.dioceseofnorwich.org/,,https://en.wikipedia.org/wiki/Diocese_of_Norwich
+Oxford,oxford.anglican.org,https://oxford.anglican.org/,,https://en.wikipedia.org/wiki/Diocese_of_Oxford
+Peterborough,peterborough-diocese.org.uk,https://peterborough-diocese.org.uk/,,https://en.wikipedia.org/wiki/Diocese_of_Peterborough
+Portsmouth,portsmouth.anglican.org,https://www.portsmouth.anglican.org/,,https://en.wikipedia.org/wiki/Diocese_of_Portsmouth
+Rochester,rochester.anglican.org,https://rochester.anglican.org/,,https://en.wikipedia.org/wiki/Diocese_of_Rochester
+St Albans,stalbansdiocese.org,https://www.stalbansdiocese.org/,stalbans.anglican.org redirects here; addresses are WordPress resource pages (/resource/<name>-general-synod-election-address/) shown on the General Synod page through a Document Library Pro dataview that scripts cannot read; the wp-json/wp/v2/search endpoint lists them all; the elections page also carries 'Responses to Questions submitted to Candidates' PDFs (compiled.csv kind=answers),https://en.wikipedia.org/wiki/Diocese_of_St_Albans
+St Eds and Ipswich,cofesuffolk.org,https://cofesuffolk.org/,,https://en.wikipedia.org/wiki/Diocese_of_St_Edmundsbury_and_Ipswich
+Salisbury,salisbury.anglican.org,https://salisbury.anglican.org/,"members list also has a Salisbury - Channel Islands constituency; site returns 403 to scripts; elections page links 10 addresses. The Channel Islands seats are filled separately (lay seat per deanery synod, clergy seat by the deans) and were returned without a count; neither deanery site (jerseydeanery.je, churchofengland.org.gg), Salisbury's media library nor Peter Owen's tracker has any address for Trick, Abernethy or Matthams (15 Nov 2026)",https://en.wikipedia.org/wiki/Diocese_of_Salisbury
+Sheffield,sheffield.anglican.org,https://sheffield.anglican.org/,"returns 403 to scripts (pages, PDFs and wp-json); the General Synod page lists members only, but the news post general-synod-election-results links all eight addresses; found through the site's own search page ?s=general+synod+election",https://en.wikipedia.org/wiki/Diocese_of_Sheffield
+Sodor and Man,sodorandman.im,https://www.sodorandman.im/,,https://en.wikipedia.org/wiki/Diocese_of_Sodor_and_Man
+Southwark,southwark.anglican.org,https://southwark.anglican.org/,,https://en.wikipedia.org/wiki/Anglican_Diocese_of_Southwark
+Southwell & Nottingham,southwell.anglican.org,https://southwell.anglican.org/,"election page links only the signed returns of result, but the addresses are uploaded to the site and listed by wp-json/wp/v2/media?search=election address",https://en.wikipedia.org/wiki/Diocese_of_Southwell_and_Nottingham
+Truro,trurodiocese.org.uk,https://trurodiocese.org.uk/,,https://en.wikipedia.org/wiki/Diocese_of_Truro
+Winchester,winchesterdiocese.org,https://winchesterdiocese.org/,winchester.anglican.org redirects here,https://en.wikipedia.org/wiki/Diocese_of_Winchester
+Worcester,cofe-worcester.org.uk,https://cofe-worcester.org.uk/,,https://en.wikipedia.org/wiki/Diocese_of_Worcester
+York,dioceseofyork.org.uk,https://dioceseofyork.org.uk/,,https://en.wikipedia.org/wiki/Diocese_of_York

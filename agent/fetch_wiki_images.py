@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""For each member with a Wikipedia article (data/wikipedia.csv), record the article's lead image:
-a thumbnail URL on upload.wikimedia.org, the Commons file page, the author and the licence, so the
-site can show the photo with its credit. Writes data/wikipedia-images.csv.
+"""For each member with a Wikipedia article (data/wikipedia.csv), record the article's lead image
+(a thumbnail URL on upload.wikimedia.org, the Commons file page, the author and the licence, so the
+site can show the photo with its credit) and the opening sentences of the article for the hover
+card. Writes data/wikipedia-images.csv.
 Usage: python3 agent/fetch_wiki_images.py"""
 import csv, re, time
 from pathlib import Path
@@ -36,16 +37,17 @@ def main():
     out = []
     for i in range(0, len(rows), 20):
         batch = rows[i:i + 20]
-        res = api(API, action="query", prop="pageimages", piprop="thumbnail|name", pithumbsize=THUMB, redirects=1,
-                  titles="|".join(r["title"] for r in batch))
+        res = api(API, action="query", prop="pageimages|extracts", piprop="thumbnail|name", pithumbsize=THUMB, redirects=1,
+                  exintro=1, explaintext=1, exsentences=3, exlimit=20, titles="|".join(r["title"] for r in batch))
         pages = {p["title"]: p for p in res.get("query", {}).get("pages", [])}
         redirects = {x["from"]: x["to"] for x in res.get("query", {}).get("redirects", [])}
         for r in batch:
             p = pages.get(redirects.get(r["title"], r["title"]), {})
             thumb = p.get("thumbnail", {}).get("source", "").split("?")[0]
             fname = p.get("pageimage", "")
+            abstract = re.sub(r"\s+", " ", p.get("extract", "")).strip()[:600]
             rec = dict(gs_number=r["gs_number"], title=r["title"], thumb_url=thumb, file="File:" + fname if fname else "",
-                       file_page="", artist="", licence="", licence_url="")
+                       file_page="", artist="", licence="", licence_url="", abstract=abstract)
             if fname:
                 info = api(COMMONS, action="query", prop="imageinfo", iiprop="extmetadata|url", titles="File:" + fname)
                 for q in info.get("query", {}).get("pages", []):
