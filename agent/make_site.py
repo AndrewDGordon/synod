@@ -40,6 +40,13 @@ def note_text(r):
     return r["note"] or "No statement found"
 
 
+def wplink(w, text, cls):
+    """A link to a Wikipedia article carrying the data the hover card needs; plain text if there is none."""
+    if not w or not w.get("url"): return h(text)
+    thumb = f' data-thumb="{h(w["thumb_url"])}"' if w.get("thumb_url") else ""
+    return f'<a class="{cls}" href="{h(w["url"])}" data-title="{h(w["title"])}" data-abstract="{h(w.get("abstract", ""))}"{thumb}>{h(text)}</a>'
+
+
 def initials(m):
     return "".join(x[0] for x in (m["first_name"], m["last_name"]) if x).upper()[:2]
 
@@ -50,9 +57,7 @@ def main():
     wiki = {r["gs_number"]: r for r in read("wikipedia.csv") if r["status"] in ("confirmed", "likely")}
     extras = {r["gs_number"]: r for r in read("wikipedia-images.csv")}
     images = {k: v for k, v in extras.items() if v["thumb_url"]}
-    const_wp = {r["diocese"]: r["wikipedia"] for r in read("dioceses.csv") if r.get("wikipedia")}
-    const_wp.update({r["constituency"]: r["url"] for r in read("constituency-wikipedia.csv")})
-    const_wp.setdefault("St Eds & Ipswich", const_wp.get("St Eds and Ipswich", ""))
+    const_wp = {r["constituency"]: r for r in read("constituency-wikipedia.csv")}  # dioceses, other constituencies, house:<House>
     held = sum(1 for r in statements.values() if r["status"] in ("downloaded", "compiled", "answers"))
     constituencies = sorted({m["constituency"] for m in members})
     today = datetime.date.today().strftime("%-d %B %Y")
@@ -64,8 +69,8 @@ def main():
         ab = extras.get(gs, {}).get("abstract", "") if w else ""
         name_html = (f'<a class="wp" href="{h(w["url"])}" data-title="{h(w["title"])}" data-abstract="{h(ab)}"'
                      f'{" data-thumb=" + chr(34) + h(im["thumb_url"]) + chr(34) if im else ""}>{name}</a>') if w else name
-        cu = const_wp.get(m["constituency"], "")
-        const_html = f'<a class="cwp" href="{h(cu)}">{h(m["constituency"])}</a>' if cu else h(m["constituency"])
+        const_html = wplink(const_wp.get(m["constituency"]), m["constituency"], "cwp")
+        house_html = wplink(const_wp.get("house:" + m["house"]), m["house"], "cwp")
         if im:
             credit = ", ".join(x for x in (im["artist"], im["licence"]) if x)
             photo = (f'<a href="{h(im["file_page"] or im["thumb_url"])}" title="{h(credit)}"><img loading="lazy" src="{h(im["thumb_url"])}" '
@@ -79,7 +84,7 @@ def main():
         search = " ".join([name, m["constituency"], m["house"], gs]).lower()
         rows.append(f'<tr data-house="{h(m["house"])}" data-const="{h(m["constituency"])}" data-elected="{elected}" data-statement="{has}" data-search="{h(search)}">'
                     f'<td class="photo">{photo}</td><td class="gs">{gs}</td><td class="name">{name_html}</td>'
-                    f'<td>{const_html}</td><td>{h(m["house"])}</td><td class="st">{st}</td><td class="note">{h(note)}</td></tr>')
+                    f'<td>{const_html}</td><td>{house_html}</td><td class="st">{st}</td><td class="note">{h(note)}</td></tr>')
 
     credits = []
     for gs, im in sorted(images.items(), key=lambda x: int(x[0])):
@@ -149,7 +154,7 @@ a.cwp {{ color:inherit; border-bottom:1px dotted var(--muted); }}
 <body>
 <header>
 <h1>General Synod 2026–2031<small>Members of the Church of England's General Synod, their election statements, and their Wikipedia articles</small></h1>
-<p class="lede">Names, GS numbers, constituencies and houses follow the Church of England's <a href="{SOURCE_PDF}">list of members</a> (October 2026). Where a diocese or the Church of England has published a candidate's election address, the statement link leads to the publisher's own copy. A linked name opens the member's Wikipedia article, and resting on it shows the article's opening lines; constituency names link to the diocese's article. Photographs come from Wikipedia and are credited below.</p>
+<p class="lede">Names, GS numbers, constituencies and houses follow the Church of England's <a href="{SOURCE_PDF}">list of members</a> (October 2026). Where a diocese or the Church of England has published a candidate's election address, the statement link leads to the publisher's own copy. A linked name opens the member's Wikipedia article, and resting on it shows the article's opening lines. Constituency and House names link to their articles in the same way. Photographs come from Wikipedia and are credited below.</p>
 <div class="stats">
 <div><b>{len(members)}</b><span>members</span></div>
 <div><b>{len(statements)}</b><span>elected members</span></div>
@@ -198,7 +203,7 @@ a.cwp {{ color:inherit; border-bottom:1px dotted var(--muted); }}
     card.style.left=x+'px'; card.style.top=y+'px';
   }}
   function hide(){{ hideTimer=setTimeout(()=>{{card.classList.remove('show'); current=null;}},180); }}
-  document.querySelectorAll('a.wp').forEach(a=>{{
+  document.querySelectorAll('a[data-abstract]').forEach(a=>{{
     a.addEventListener('mouseenter',()=>show(a)); a.addEventListener('mouseleave',hide);
     a.addEventListener('focus',()=>show(a)); a.addEventListener('blur',hide);
   }});
